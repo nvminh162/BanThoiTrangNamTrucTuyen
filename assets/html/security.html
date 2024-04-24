@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECURITY | PAUL'S MENSWEAR ® | Official Website VN</title>
+
+    <link rel="icon" type="image/x-icon" href="../img/favicon/favicon-256.png">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <script src="../bootstrap-5.3.3-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+
+<body>
+    <div class="container-fluid p-0">
+        <!-- Navigation -->
+        <section id="header">
+            <nav class="navbar navbar-expand-lg py-2 bg-body-tertiary fixed-top">
+                <div class="container">
+                    <!--nav toggle -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars fs-5"></i>
+                    </button>
+                    <!--nav logo -->
+                    <a class="navbar-brand me-0 fs-4" href="../html/home.html">
+                        <img class="nav-logo" src="../img/entire/logo-black.jpg" alt="" width="120px">
+                    </a>
+                    <div class="sideBar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium" aria-current="page"
+                                        href="../html/home.html">home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium dropdown-toggle" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        product
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../html/product/tshirt.html">t-shirts</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../html/product/shirt.html">shirts</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../html/product/outerwear.html">outerwears</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../html/product/pants.html">pants</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../html/product/shorts.html">shorts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium" href="../html/news.html">news</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-bold active"
+                                        href="../html/store.html">contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium" href="../../index.html">about</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--nav item  -->
+                    <ul class="nav-list d-flex list-unstyled my-auto">
+                        <li class="nav-item mx-2">
+                            <a class="text-dark fs-5" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                                aria-controls="offcanvasTop">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <div class="dropdown">
+                                <a class="fs-5 text-dark" data-bs-toggle="dropdown" href="#"><i
+                                        class="fa-solid fa-user"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="btn-login">
+                                        <a class="dropdown-item" href="../html/login.html">Đăng nhập</a>
+                                    </li>
+                                    <li class="btn-register">
+                                        <a class="dropdown-item" href="../html/register.html">Đăng ký</a>
+                                    </li>
+                                    <li class="btn-logout">
+                                        <a class="dropdown-item" href="../html/login.html">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2 position-relative">
+                            <a class="text-dark fs-5" href="../html/cart.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="quantity position-absolute top-0 start-100 badge rounded-pill bg-danger">
+                                    0
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- search form -->
+            <div class="search-offcanvas offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form action="">
+                        <div class="input-group mb-3 w-75 d-flex mx-auto">
+                            <input required type="text" class="form-control border-black p-3" placeholder="Search">
+                            <button class="btn border-black px-4" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+                    </form>
+                    <p class="text-center text-danger">Không tìm thấy kết quả khả dụng</p>
+                </div>
+            </div>
+        </section>
+        <!-- breadcumb -->
+        <section id="breadcrumb">
+            <div class="py-3 bg-f2f2f2">
+                <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a class="text-dark text-decoration-none"
+                                href="../html/home.html">Home</a></li>
+                        <li class="breadcrumb-item"><a class="text-dark text-decoration-none"
+                                href="../html/store.html">Contact</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">INFORMATION SECURITY POLICY</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <!-- security -->
+        <section id="security">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-12 text-center">
+                        <h2 class="faqs-title text-uppercase">INFORMATION SECURITY POLICY</h2>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <p>
+                        Ananas (đơn vị chủ quản hệ thống website www.ananas.vn) cam kết tôn trọng, bảo mật những thông
+                        tin mang tính riêng tư của bạn. Chúng tôi hiểu rằng bạn cần biết chúng tôi quản lý những thông
+                        tin cá nhân được tập hợp từ website như thế nào. Hãy đọc và tìm hiểu về “Chính Sách Bảo Mật
+                        Thông Tin” dưới đây trước khi truy cập những nội dung khác để hiểu hơn những cam kết mà chúng
+                        tôi thực hiện, nhằm tôn trọng và bảo vệ quyền lợi của người dùng. Việc bạn truy cập, đăng ký, sử
+                        dụng website Ananas.vn có nghĩa rằng bạn đồng ý và chấp nhận ràng buộc bởi các điều khoản của
+                        bản quy định bảo mật của chúng tôi.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="accordion accordion-flush border-top border-black" id="accordionFlush">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <h4 class="mb-0 py-3">THÔNG TIN CÁ NHÂN</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                    Ananas chỉ yêu cầu các thông tin cá nhân của bạn như:
+                                                </p>
+                                                <ul>
+                                                    <li>Họ và Tên</li>
+                                                    <li>Ngày, tháng, năm sinh</li>
+                                                    <li>Địa chỉ Email</li>
+                                                    <li>Địa chỉ (dùng cho mục đích quản lý đơn hàng, giao nhận)</li>
+                                                </ul>
+                                                <p>
+                                                    Cùng các thông tin không bắt buộc khác khi bạn muốn tương tác với
+                                                    một
+                                                    số nội dung trên Ananas. Các thông tin cá nhân của bạn sẽ được
+                                                    Ananas sử dụng để nhận diện và liên hệ với bạn khi cần.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        <h4 class="mb-0 py-3">CÁCH THỨC SỬ DỤNG THÔNG TIN</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                    Thông thường, chúng tôi sử dụng các thông tin bạn cung cấp chỉ để
+                                                    liên hệ, hồi đáp những câu hỏi hay xác nhận thông tin đơn hàng theo
+                                                    tên, địa chỉ và số điện thoại mà bạn đã cung cấp. Chúng tôi cam kết
+                                                    thông tin cá nhân của bạn sẽ không bị chia sẻ với bất kỳ một bên thứ
+                                                    ba nào khi chưa có sự đồng ý. Chúng tôi chỉ có thể được phép chia sẻ
+                                                    thông tin với các đối tác giao nhận hoặc với các đối tác trong các
+                                                    chương trình, dự án liên kết khác. Dữ liệu khách hàng của Ananas có
+                                                    thể được chuyển nhượng cho người kế thừa hay người được chỉ định
+                                                    theo thỏa thuận để quản lý khi công ty có sự mua bán, sát nhập hay
+                                                    tuyên bố phá sản.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">
+                                        <h4 class="mb-0 py-3">ĐẢM BẢO AN TOÀN VỚI CÁC THÔNG TIN ĐƯỢC THU THẬP</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                    Ananas chỉ tập hợp lại các thông tin cá nhân của bạn trong phạm vi
+                                                    phù hợp và cần thiết cho mục đích cải thiện chất lượng phục vụ cũng
+                                                    như nâng cao trải nghiệm các dịch vụ được Ananas cung cấp. Chúng tôi
+                                                    cam kết tôn trọng và luôn duy trì các biện pháp thích hợp nhằm đảm
+                                                    bảo tính an toàn, vẹn nguyên, độ chính xác cùng tính bảo mật về các
+                                                    thông tin mà bạn đã tin tưởng để cung cấp cho chúng tôi. Ngoài ra,
+                                                    Ananas cũng cam kết có những biện pháp thích hợp nhằm đảm bảo tính
+                                                    an toàn, tính bảo mật về mọi thông tin mà bạn đã cung cấp cho chúng
+                                                    tôi trong các chương trình hay sự liên kết với các đối tác, các bên
+                                                    thứ ba.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                        aria-expanded="false" aria-controls="flush-collapseFour">
+                                        <h4 class="mb-0 py-3">COOKIES</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                    Cookies là những tệp nhỏ phát sinh trong quá trình bạn truy cập,
+                                                    hoạt động trên Website được Ananas ghi chép lại nhằm mục đích đáp
+                                                    ứng các nhu cầu của người sử dụng và nhiều mục đích khác.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                        aria-expanded="false" aria-controls="flush-collapseFive">
+                                        <h4 class="mb-0 py-3">LIÊN KẾT VỚI CÁC WEBSITE KHÁC</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                    Nếu bạn nhấn đường liên kết sang Website của bên thứ ba, bạn sẽ tạm
+                                                    rời khỏi Ananas để đến trang Web mà bạn đã chọn. Ananas không thể
+                                                    kiểm soát các hoạt động của bên thứ ba và không chịu trách nhiệm về
+                                                    sự an toàn hay bất kể những nội dung gì có trên website đó.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                        aria-expanded="false" aria-controls="flush-collapseSix">
+                                        <h4 class="mb-0 py-3">ĐIỀU KHOẢN THAY ĐỔI</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                    Chúng tôi có toàn quyền thay đổi, bổ sung nội dung của các điều
+                                                    khoản này. Bạn có thể thường xuyên kiểm tra nhằm nắm được các điều
+                                                    khoản thay đổi trong “Chính Sách Bảo Mật Thông Tin” của chúng tôi.
+                                                    Thêm vào đó, đối với những thay đổi quan trọng về cách sử dụng liên
+                                                    quan đến các thông tin cá nhân mà bạn cung cấp cho Ananas, chúng tôi
+                                                    sẽ gửi thông báo cho bạn bằng Email hoặc thông báo trên các kênh
+                                                    truyền thông chính thức khác của Ananas. Trong trường hợp bạn có
+                                                    thắc mắc về các điều khoản hay cách sử dụng liên quan đến các thông
+                                                    tin cá nhân của bạn tại website Ananas.vn, xin liên hệ với chúng tôi
+                                                    theo địa chỉ Email: cs@ananas.vn.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section id="footer">
+            <!-- PC -->
+            <div class="footer-pc container-fluid text-white bg-4c4c4c">
+                <div class="row">
+                    <div class="col-3 px-5">
+                        <div class="row my-5">
+                            <div class="col-12">
+                                <img src="../img/entire/logo-white.png" alt="logo" width="80%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="row my-5">
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    sản phẩm
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/product/tshirt.html">
+                                        <li class="footer-item text-CCCCCC">T-Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/shirt.html">
+                                        <li class="footer-item text-CCCCCC">Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/outerswear.html">
+                                        <li class="footer-item text-CCCCCC">Outerswear</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/pants.html">
+                                        <li class="footer-item text-CCCCCC">Pants</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/shorts.html">
+                                        <li class="footer-item text-CCCCCC">Shorts</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    công ty
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/transfer.html">
+                                        <li class="footer-item text-CCCCCC">Liên hệ chuyển nhượng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    hỗ trợ
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/faqs.html">
+                                        <li class="footer-item text-CCCCCC">FAQs</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/security.html">
+                                        <li class="footer-item text-CCCCCC">bảo mật thông tin</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/policy.html">
+                                        <li class="footer-item text-CCCCCC">Chính sách chung</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/order.html">
+                                        <li class="footer-item text-CCCCCC">Tra cứu đơn hàng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    liên hệ
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="mailto:nvminh162@gmail.com">
+                                        <li class="footer-item text-CCCCCC">Email góp ý</li>
+                                    </a>
+                                    <li class="footer-item text-CCCCCC">Hotline</li>
+                                    <a class="text-decoration-none text-white" href="tel:0353999798">
+                                        <li class="footer-item text-CCCCCC">0353 999 798</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="tel:0388800723">
+                                        <li class="footer-item text-CCCCCC">0388 800 723</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    mạng xã hội
+                                </h4>
+                                <ul class="footer-list list-unstyled d-flex flex-column flex-xl-row">
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.facebook.com/nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-facebook fs-1 p-2"></i></li>
+                                    </a>
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.instagram.com/nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-instagram fs-1 p-2"></i></li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="https://www.tiktok.com/@nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i class="fa-brands fa-tiktok fs-1 p-2"></i>
+                                        </li>
+                                    </a>
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.threads.net/@nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-threads fs-1 p-2"></i></li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    đăng ký nhận mail
+                                </h4>
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-10 px-0">
+                                            <input class="w-100 p-2 rounded-2" type="email" placeholder="Email"
+                                                name="footer_email--PC" id="footer_email--PC" required>
+                                        </div>
+                                        <div class="col-2 px-0">
+                                            <button style="margin-left: -10px;" class="py-2 w-100 text-bg-dark"
+                                                type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-6">
+                                <img class="m-5" src="../img/entire/license.png" alt="" width="50%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <= Tablet, Mobile -->
+            <div class="footer-tablet container-fluid p-0 text-white bg-4c4c4c">
+                <div class="accordion" id="accordionFooter">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <h4 class="footer-heading text-uppercase">
+                                    sản phẩm
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/product/tshirt.html">
+                                        <li class="footer-item text-CCCCCC">T-Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/shirt.html">
+                                        <li class="footer-item text-CCCCCC">Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/outerswear.html">
+                                        <li class="footer-item text-CCCCCC">Outerswear</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/pants.html">
+                                        <li class="footer-item text-CCCCCC">Pants</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/shorts.html">
+                                        <li class="footer-item text-CCCCCC">Shorts</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                <h4 class="footer-heading text-uppercase">
+                                    về công ty
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/transfer.html">
+                                        <li class="footer-item text-CCCCCC">Liên hệ chuyển nhượng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                <h4 class="footer-heading text-uppercase">
+                                    hỗ trợ
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/faqs.html">
+                                        <li class="footer-item text-CCCCCC">FAQs</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/security.html">
+                                        <li class="footer-item text-CCCCCC">Bảo mật thông tin</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/policy.html">
+                                        <li class="footer-item text-CCCCCC">Chính sách chung</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/order.html">
+                                        <li class="footer-item text-CCCCCC">Tra cứu đơn hàng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                <h4 class="footer-heading text-uppercase">
+                                    liên hệ
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="mailto:nvminh162@gmail.com">
+                                        <li class="footer-item text-CCCCCC">Email góp ý</li>
+                                    </a>
+                                    <li class="footer-item text-CCCCCC">Hotline</li>
+                                    <a class="text-decoration-none text-white" href="tel:0353999798">
+                                        <li class="footer-item text-CCCCCC">0353 999 798</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="tel:0388800723">
+                                        <li class="footer-item text-CCCCCC">0388 800 723</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0">
+                        <h4 class="footer-heading mb-4 text-uppercase">
+                            mạng xã hội
+                        </h4>
+                        <ul class="footer-list list-unstyled d-flex">
+                            <a class="text-decoration-none text-white" href="https://www.facebook.com/nvminh162">
+                                <li class="footer-item text-CCCCCC"><i
+                                        class="fa-brands fa-square-facebook fs-1 p-2"></i></li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.instagram.com/nvminh162">
+                                <li class="footer-item text-CCCCCC"><i
+                                        class="fa-brands fa-square-instagram fs-1 p-2"></i></li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.tiktok.com/@nvminh162">
+                                <li class="footer-item text-CCCCCC"><i class="fa-brands fa-tiktok fs-1 p-2"></i>
+                                </li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.threads.net/@nvminh162">
+                                <li class="footer-item text-CCCCCC"><i class="fa-brands fa-square-threads fs-1 p-2"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0">
+                        <h4 class="footer-heading mb-4 text-uppercase">
+                            đăng ký nhận mail
+                        </h4>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-10 px-0">
+                                    <input class="w-100 p-2 rounded-2" type="email" placeholder="Email"
+                                        name="footer_email--Mobile" id="footer_email--Mobile" required>
+                                </div>
+                                <div class="col-2 px-0">
+                                    <button class="p-2 w-100 text-bg-dark" type="submit"><i
+                                            class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0 text-center">
+                        <a class="px-3 py-2 bg-black rounded-3" href="#"><i class="fa-solid fa-arrow-up"
+                                style="color: #ffffff;"></i></a>
+                        Back to top
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0 text-center py-4">
+                        <img src="../img/entire/license.png" alt="" width="20%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Copyright -->
+        <section id="copyright">
+            <div class="footer-copyright text-center py-1 bg-f2f2f2 text-dark fw-medium">
+                Copyright © 2024 <a class="text-decoration-none text-dark" href="#">PAUL'S MENSWEAR.</a>
+                Powered by <a class="text-decoration-none text-dark" href="#">Paul Nguyen</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- script -->
+    <script src="../js/home.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+
+</html>

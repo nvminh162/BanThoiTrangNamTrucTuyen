@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pants Collection | PAUL'S MENSWEAR ® | Official Website VN</title>
+
+    <link rel="icon" type="image/x-icon" href="../../img/favicon/favicon-256.png">
+    <link rel="stylesheet" href="../../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../fonts/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../../css/myStyle.css">
+    <script src="../../bootstrap-5.3.3-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="../../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <!-- Navigation -->
+        <section id="header">
+            <nav class="navbar navbar-expand-lg py-2 bg-body-tertiary fixed-top">
+                <div class="container">
+                    <!--nav toggle -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars fs-5"></i>
+                    </button>
+                    <!--nav logo -->
+                    <a class="navbar-brand me-0 fs-4" href="../home.html">
+                        <img class="nav-logo" src="../../img/entire/logo-black.jpg" alt="" width="120px">
+                    </a>
+                    <div class="sideBar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium" aria-current="page"
+                                        href="../home.html">home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-uppercase fs-5 fw-bold active dropdown-toggle" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        product
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../../html/product/tshirt.html">t-shirts</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../../html/product/shirt.html">shirts</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../../html/product/outerwear.html">outerwears</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../../html/product/pants.html">pants</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../../html/product/shorts.html">shorts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium"
+                                        href="../../html/news.html">news</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium"
+                                        href="../../html/store.html">contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium"
+                                        href="../../../index.html">about</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--nav item  -->
+                    <ul class="nav-list d-flex list-unstyled my-auto">
+                        <li class="nav-item mx-2">
+                            <a class="text-dark fs-5" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                                aria-controls="offcanvasTop">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <div class="dropdown">
+                                <a class="fs-5 text-dark" data-bs-toggle="dropdown" href="#"><i
+                                        class="fa-solid fa-user"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="btn-login">
+                                        <a class="dropdown-item" href="../../html/login.html">Đăng nhập</a>
+                                    </li>
+                                    <li class="btn-register">
+                                        <a class="dropdown-item" href="../../html/register.html">Đăng ký</a>
+                                    </li>
+                                    <li class="btn-logout">
+                                        <a class="dropdown-item" href="../../html/login.html">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2 position-relative">
+                            <a class="text-dark fs-5" href="../../html/cart.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="quantity position-absolute top-0 start-100 badge rounded-pill bg-danger">
+                                    0
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- search form -->
+            <div class="search-offcanvas offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form action="">
+                        <div class="input-group mb-3 w-75 d-flex mx-auto">
+                            <input required type="text" class="form-control border-black p-3" placeholder="Search">
+                            <button class="btn border-black px-4" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+                    </form>
+                    <p class="text-center text-danger">Không tìm thấy kết quả khả dụng</p>
+                </div>
+            </div>
+        </section>
+        <!-- breadcumb -->
+        <section id="breadcrumb">
+            <div class="py-3 bg-f2f2f2">
+                <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a class="text-dark text-decoration-none"
+                                href="../home.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Product</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <!-- Slider -->
+        <section id="slider">
+            <div id="slider-carousel" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#slider-carousel" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#slider-carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#slider-carousel" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../../img/banner/banner1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../img/banner/banner2.webp" alt="Los Angeles" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../img/banner/banner4.jpg" alt="New York" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#slider-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#slider-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+        <!-- Selection -->
+        <section id="selection">
+            <div class="container border-top border-bottom border-black pb-4 my-5">
+                <div class="row">
+                    <div class="col-lg-5 col-12 mt-4">
+                        <div class="row ">
+                            <div class="col-lg-3 col-6 px-0 text-start">
+                                <div class="dropdown">
+                                    <a class="mx-sm-3 mx-2 fs-5 text-dark text-decoration-none"
+                                        data-bs-toggle="dropdown" href="#">
+                                        Price
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">Giá dưới 5,000,000đ</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">5,000,000đ -
+                                                10,000,000đ</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">10,000,000đ -
+                                                20,000,000đ</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">20,000,000đ -
+                                                40,000,000đ</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Giá trên 40,000,000đ</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 px-0 text-start">
+                                <div class="dropdown">
+                                    <a class="mx-sm-3 mx-2 fs-5 text-dark text-decoration-none"
+                                        data-bs-toggle="dropdown" href="#">
+                                        Type
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item text-uppercase" type="button">t-shirts</button>
+                                        </li>
+                                        <li><button class="dropdown-item text-uppercase" type="button">shirts</button>
+                                        </li>
+                                        <li><button class="dropdown-item text-uppercase"
+                                                type="button">outerwears</button></li>
+                                        <li><button class="dropdown-item text-uppercase" type="button">pants</button>
+                                        </li>
+                                        <li><button class="dropdown-item text-uppercase" type="button">shorts</button>
+                                        </li>
+
+
+                                        <li><button class="dropdown-item text-uppercase" type="button">sale</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 px-0 text-start">
+                                <div class="dropdown">
+                                    <a class="mx-sm-3 mx-2 fs-5 text-dark text-decoration-none"
+                                        data-bs-toggle="dropdown" href="#">
+                                        Size
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">Size S</button></li>
+                                        <li><button class="dropdown-item" type="button">Size M</button></li>
+                                        <li><button class="dropdown-item" type="button">Size L</button></li>
+                                        <li><button class="dropdown-item" type="button">Size XL</button></li>
+                                        <li><button class="dropdown-item" type="button">Size XXL</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 px-0 text-start">
+                                <div class="dropdown">
+                                    <a class="mx-sm-3 mx-2 fs-5 text-dark text-decoration-none"
+                                        data-bs-toggle="dropdown" href="#">
+                                        Color
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">Red</button></li>
+                                        <li><button class="dropdown-item" type="button">Orange</button></li>
+                                        <li><button class="dropdown-item" type="button">Yellow</button></li>
+                                        <li><button class="dropdown-item" type="button">Green</button></li>
+                                        <li><button class="dropdown-item" type="button">Blue</button></li>
+                                        <li><button class="dropdown-item" type="button">Purple</button></li>
+                                        <li><button class="dropdown-item" type="button">Pink</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-12 text-center text-lg-end mt-4">
+                        <div class="dropdown">
+                            <a class="mx-sm-3 mx-2 fs-5 text-dark text-decoration-none border-1 border border-black rounded-2 py-2 px-lg-4"
+                                data-bs-toggle="dropdown" href="#">
+                                <span class="px-lg-0 mx-lg-0 px-md-5 px-md-5 px-4 mx-4">Sort <i
+                                        class="fa-solid fa-filter"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Mới nhất</button></li>
+                                <li><button class="dropdown-item" type="button">Giá tăng dần</button></li>
+                                <li><button class="dropdown-item" type="button">Giá giảm dần</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product -->
+        <section id="products">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="product-title text-uppercase text-center my-3">
+                        <h4>pants</h4>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-lg-3 col-md-4 col-6 px-0">
+                        <div class="container mt-3">
+                            <div class="product-card card" style="width:100%">
+                                <a class="text-decoration-none text-dark" href="../../html/detailsProduct/pants1.html">
+                                    <div class="product-img">
+                                        <img class="card-img-top" src="../../img/products/pants/1/1.avif"
+                                            alt="Card image" width="100%">
+                                        <img class="product-overlay rounded-4" src="../../img/products/pants/1/5.avif"
+                                            alt="" width="100%">
+                                    </div>
+                                    <div class="card-body px-2">
+                                        <h4 class="card-title">GG LINEN BLEND CANVAS JOGGING PANT</h4>
+                                        <div class="row">
+                                            <div class="col-sm-6 col-12 text-start product-rating"
+                                                style="color: #FFD43B;">
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-regular fa-star fa-2xs"></i>
+                                            </div>
+                                            <div class="col-sm-6 col-12 text-end px-0 pe-2">
+                                                <!-- <p class="product-price m-1 card-text text-decoration-line-through text-center">23,000,000đ</p> -->
+                                                <p class="product-price m-1 card-text">13,500,000đ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="product-control w-100 d-flex justify-content-center">
+                                    <i class="product-icon product_icon--favourite fa-solid fa-heart fa-beat"
+                                        style="color: #000000;"></i>
+                                    <i class="product-icon product_icon--cart fa-solid fa-cart-plus fa-beat"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 px-0">
+                        <div class="container mt-3">
+                            <div class="product-card card" style="width:100%">
+                                <a class="text-decoration-none text-dark" href="../../html/detailsProduct/pants2.html">
+                                    <div class="product-img">
+                                        <img class="card-img-top" src="../../img/products/pants/2/1.avif"
+                                            alt="Card image" width="100%">
+                                        <img class="product-overlay rounded-4" src="../../img/products/pants/2/5.avif"
+                                            alt="" width="100%">
+                                    </div>
+                                    <div class="card-body px-2">
+                                        <h4 class="card-title">GG NYLON JACQUARD TROUSER</h4>
+                                        <div class="row">
+                                            <div class="col-sm-6 col-12 text-start product-rating"
+                                                style="color: #FFD43B;">
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-regular fa-star fa-2xs"></i>
+                                            </div>
+                                            <div class="col-sm-6 col-12 text-end px-0 pe-2">
+                                                <!-- <p class="product-price m-1 card-text text-decoration-line-through text-center">23,000,000đ</p> -->
+                                                <p class="product-price m-1 card-text">11,500,000đ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="product-control w-100 d-flex justify-content-center">
+                                    <i class="product-icon product_icon--favourite fa-solid fa-heart fa-beat"
+                                        style="color: #000000;"></i>
+                                    <i class="product-icon product_icon--cart fa-solid fa-cart-plus fa-beat"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 px-0">
+                        <div class="container mt-3">
+                            <div class="product-card card" style="width:100%">
+                                <a class="text-decoration-none text-dark" href="../../html/detailsProduct/pants3.html">
+                                    <div class="product-img">
+                                        <img class="card-img-top" src="../../img/products/pants/3/1.avif"
+                                            alt="Card image" width="100%">
+                                        <img class="product-overlay rounded-4" src="../../img/products/pants/3/5.avif"
+                                            alt="" width="100%">
+                                    </div>
+                                    <div class="card-body px-2">
+                                        <h4 class="card-title">FLUID DRILL PANT</h4>
+                                        <div class="row">
+                                            <div class="col-sm-6 col-12 text-start product-rating"
+                                                style="color: #FFD43B;">
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-regular fa-star fa-2xs"></i>
+                                            </div>
+                                            <div class="col-sm-6 col-12 text-end px-0 pe-2">
+                                                <!-- <p class="product-price m-1 card-text text-decoration-line-through text-center">23,000,000đ</p> -->
+                                                <p class="product-price m-1 card-text">7,500,000đ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="product-control w-100 d-flex justify-content-center">
+                                    <i class="product-icon product_icon--favourite fa-solid fa-heart fa-beat"
+                                        style="color: #000000;"></i>
+                                    <i class="product-icon product_icon--cart fa-solid fa-cart-plus fa-beat"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 px-0">
+                        <div class="container mt-3">
+                            <div class="product-card card" style="width:100%">
+                                <a class="text-decoration-none text-dark" href="../../html/detailsProduct/pants4.html">
+                                    <div class="product-img">
+                                        <img class="card-img-top" src="../../img/products/pants/4/1.avif"
+                                            alt="Card image" width="100%">
+                                        <img class="product-overlay rounded-4" src="../../img/products/pants/4/5.avif"
+                                            alt="" width="100%">
+                                    </div>
+                                    <div class="card-body px-2">
+                                        <h4 class="card-title">GG POLYESTER TAILORED TROUSER</h4>
+                                        <div class="row">
+                                            <div class="col-sm-6 col-12 text-start product-rating"
+                                                style="color: #FFD43B;">
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-solid fa-star fa-2xs"></i>
+                                                <i class="fa-regular fa-star fa-2xs"></i>
+                                            </div>
+                                            <div class="col-sm-6 col-12 text-end px-0 pe-2">
+                                                <!-- <p class="product-price m-1 card-text text-decoration-line-through text-center">23,000,000đ</p> -->
+                                                <p class="product-price m-1 card-text">14,500,000đ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="product-control w-100 d-flex justify-content-center">
+                                    <i class="product-icon product_icon--favourite fa-solid fa-heart fa-beat"
+                                        style="color: #000000;"></i>
+                                    <i class="product-icon product_icon--cart fa-solid fa-cart-plus fa-beat"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link text-bg-dark" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="liveAlertPlaceholder position-fixed top-0 end-0"></div>
+        </section>
+        <!-- Footer -->
+        <section id="footer">
+            <!-- PC -->
+            <div class="footer-pc container-fluid text-white bg-4c4c4c">
+                <div class="row">
+                    <div class="col-3 px-5">
+                        <div class="row my-5">
+                            <div class="col-12">
+                                <img src="../../img/entire/logo-white.png" alt="logo" width="80%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="row my-5">
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    sản phẩm
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../../html/product/tshirt.html">
+                                        <li class="footer-item text-CCCCCC">T-Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../../html/product/shirt.html">
+                                        <li class="footer-item text-CCCCCC">Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white"
+                                        href="../../html/product/outerswear.html">
+                                        <li class="footer-item text-CCCCCC">Outerswear</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../../html/product/pants.html">
+                                        <li class="footer-item text-CCCCCC">Pants</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../../html/product/shorts.html">
+                                        <li class="footer-item text-CCCCCC">Shorts</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    công ty
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../../html/transfer.html">
+                                        <li class="footer-item text-CCCCCC">Liên hệ chuyển nhượng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    hỗ trợ
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../../html/faqs.html">
+                                        <li class="footer-item text-CCCCCC">FAQs</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../../html/security.html">
+                                        <li class="footer-item text-CCCCCC">bảo mật thông tin</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../../html/policy.html">
+                                        <li class="footer-item text-CCCCCC">Chính sách chung</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../../html/order.html">
+                                        <li class="footer-item text-CCCCCC">Tra cứu đơn hàng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    liên hệ
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="mailto:nvminh162@gmail.com">
+                                        <li class="footer-item text-CCCCCC">Email góp ý</li>
+                                    </a>
+                                    <li class="footer-item text-CCCCCC">Hotline</li>
+                                    <a class="text-decoration-none text-white" href="tel:0353999798">
+                                        <li class="footer-item text-CCCCCC">0353 999 798</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="tel:0388800723">
+                                        <li class="footer-item text-CCCCCC">0388 800 723</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    mạng xã hội
+                                </h4>
+                                <ul class="footer-list list-unstyled d-flex flex-column flex-xl-row">
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.facebook.com/nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-facebook fs-1 p-2"></i></li>
+                                    </a>
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.instagram.com/nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-instagram fs-1 p-2"></i></li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="https://www.tiktok.com/@nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i class="fa-brands fa-tiktok fs-1 p-2"></i>
+                                        </li>
+                                    </a>
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.threads.net/@nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-threads fs-1 p-2"></i></li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    đăng ký nhận mail
+                                </h4>
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-10 px-0">
+                                            <input class="w-100 p-2 rounded-2" type="email" placeholder="Email"
+                                                name="footer_email--PC" id="footer_email--PC" required>
+                                        </div>
+                                        <div class="col-2 px-0">
+                                            <button style="margin-left: -10px;" class="py-2 w-100 text-bg-dark"
+                                                type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-6">
+                                <img class="m-5" src="../../img/entire/license.png" alt="" width="50%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <= Tablet, Mobile -->
+            <div class="footer-tablet container-fluid p-0 text-white bg-4c4c4c">
+                <div class="accordion" id="accordionFooter">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <h4 class="footer-heading text-uppercase">
+                                    sản phẩm
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../../html/product/tshirt.html">
+                                        <li class="footer-item text-CCCCCC">T-Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../../html/product/shirt.html">
+                                        <li class="footer-item text-CCCCCC">Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white"
+                                        href="../../html/product/outerswear.html">
+                                        <li class="footer-item text-CCCCCC">Outerswear</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../../html/product/pants.html">
+                                        <li class="footer-item text-CCCCCC">Pants</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../../html/product/shorts.html">
+                                        <li class="footer-item text-CCCCCC">Shorts</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                <h4 class="footer-heading text-uppercase">
+                                    về công ty
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../../html/transfer.html">
+                                        <li class="footer-item text-CCCCCC">Liên hệ chuyển nhượng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                <h4 class="footer-heading text-uppercase">
+                                    hỗ trợ
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../../html/faqs.html">
+                                        <li class="footer-item text-CCCCCC">FAQs</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../../html/security.html">
+                                        <li class="footer-item text-CCCCCC">Bảo mật thông tin</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../../html/policy.html">
+                                        <li class="footer-item text-CCCCCC">Chính sách chung</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../../html/order.html">
+                                        <li class="footer-item text-CCCCCC">Tra cứu đơn hàng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                <h4 class="footer-heading text-uppercase">
+                                    liên hệ
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="mailto:nvminh162@gmail.com">
+                                        <li class="footer-item text-CCCCCC">Email góp ý</li>
+                                    </a>
+                                    <li class="footer-item text-CCCCCC">Hotline</li>
+                                    <a class="text-decoration-none text-white" href="tel:0353999798">
+                                        <li class="footer-item text-CCCCCC">0353 999 798</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="tel:0388800723">
+                                        <li class="footer-item text-CCCCCC">0388 800 723</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0">
+                        <h4 class="footer-heading mb-4 text-uppercase">
+                            mạng xã hội
+                        </h4>
+                        <ul class="footer-list list-unstyled d-flex">
+                            <a class="text-decoration-none text-white" href="https://www.facebook.com/nvminh162">
+                                <li class="footer-item text-CCCCCC"><i
+                                        class="fa-brands fa-square-facebook fs-1 p-2"></i></li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.instagram.com/nvminh162">
+                                <li class="footer-item text-CCCCCC"><i
+                                        class="fa-brands fa-square-instagram fs-1 p-2"></i></li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.tiktok.com/@nvminh162">
+                                <li class="footer-item text-CCCCCC"><i class="fa-brands fa-tiktok fs-1 p-2"></i>
+                                </li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.threads.net/@nvminh162">
+                                <li class="footer-item text-CCCCCC"><i class="fa-brands fa-square-threads fs-1 p-2"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0">
+                        <h4 class="footer-heading mb-4 text-uppercase">
+                            đăng ký nhận mail
+                        </h4>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-10 px-0">
+                                    <input class="w-100 p-2 rounded-2" type="email" placeholder="Email"
+                                        name="footer_email--Mobile" id="footer_email--Mobile" required>
+                                </div>
+                                <div class="col-2 px-0">
+                                    <button class="p-2 w-100 text-bg-dark" type="submit"><i
+                                            class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0 text-center">
+                        <a class="px-3 py-2 bg-black rounded-3" href="#"><i class="fa-solid fa-arrow-up"
+                                style="color: #ffffff;"></i></a>
+                        Back to top
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0 text-center py-4">
+                        <img src="../../img/entire/license.png" alt="" width="20%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Copyright -->
+        <section id="copyright">
+            <div class="footer-copyright text-center py-1 bg-f2f2f2 text-dark fw-medium">
+                Copyright © 2024 <a class="text-decoration-none text-dark" href="#">PAUL'S MENSWEAR.</a>
+                Powered by <a class="text-decoration-none text-dark" href="#">Paul Nguyen</a>
+            </div>
+        </section>
+    </div>
+    <!-- script -->
+    <script src="../../js/product.js"></script>
+</body>
+
+</html>

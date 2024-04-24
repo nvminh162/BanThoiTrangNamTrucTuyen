@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLICY | PAUL'S MENSWEAR ® | Official Website VN</title>
+
+    <link rel="icon" type="image/x-icon" href="../img/favicon/favicon-256.png">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <script src="../bootstrap-5.3.3-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+
+<body>
+    <div class="container-fluid p-0">
+        <!-- Navigation -->
+        <section id="header">
+            <nav class="navbar navbar-expand-lg py-2 bg-body-tertiary fixed-top">
+                <div class="container">
+                    <!--nav toggle -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars fs-5"></i>
+                    </button>
+                    <!--nav logo -->
+                    <a class="navbar-brand me-0 fs-4" href="../html/home.html">
+                        <img class="nav-logo" src="../img/entire/logo-black.jpg" alt="" width="120px">
+                    </a>
+                    <div class="sideBar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium" aria-current="page"
+                                        href="../html/home.html">home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium dropdown-toggle" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        product
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../html/product/tshirt.html">t-shirts</a></li>
+                                        <li><a class="dropdown-item text-uppercase" href="../html/product/shirt.html">shirts</a></li>
+                                        <li><a class="dropdown-item text-uppercase" href="../html/product/outerwear.html">outerwears</a></li>
+                                        <li><a class="dropdown-item text-uppercase" href="../html/product/pants.html">pants</a></li>
+                                        <li><a class="dropdown-item text-uppercase" href="../html/product/shorts.html">shorts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium" href="../html/news.html">news</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-bold active"
+                                        href="../html/store.html">contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium" href="../../index.html">about</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--nav item  -->
+                    <ul class="nav-list d-flex list-unstyled my-auto">
+                        <li class="nav-item mx-2">
+                            <a class="text-dark fs-5" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                                aria-controls="offcanvasTop">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <div class="dropdown">
+                                <a class="fs-5 text-dark" data-bs-toggle="dropdown" href="#"><i
+                                        class="fa-solid fa-user"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="btn-login">
+                                        <a class="dropdown-item" href="../html/login.html">Đăng nhập</a>
+                                    </li>
+                                    <li class="btn-register">
+                                        <a class="dropdown-item" href="../html/register.html">Đăng ký</a>
+                                    </li>
+                                    <li class="btn-logout">
+                                        <a class="dropdown-item" href="../html/login.html">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2 position-relative">
+                            <a class="text-dark fs-5" href="../html/cart.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="quantity position-absolute top-0 start-100 badge rounded-pill bg-danger">
+                                    0
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- search form -->
+            <div class="search-offcanvas offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form action="">
+                        <div class="input-group mb-3 w-75 d-flex mx-auto">
+                            <input required type="text" class="form-control border-black p-3" placeholder="Search">
+                            <button class="btn border-black px-4" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+                    </form>
+                    <p class="text-center text-danger">Không tìm thấy kết quả khả dụng</p>
+                </div>
+            </div>
+        </section>
+        <!-- breadcumb -->
+        <section id="breadcrumb">
+            <div class="py-3 bg-f2f2f2">
+                <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a class="text-dark text-decoration-none"
+                                href="../html/home.html">Home</a></li>
+                        <li class="breadcrumb-item"><a class="text-dark text-decoration-none"
+                                href="../html/store.html">Contact</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">TERMS & CONDITIONS</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <!-- security -->
+        <section id="policy">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-12 text-center">
+                        <h2 class="faqs-title text-uppercase">TERMS & CONDITIONS</h2>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <p>
+                        Chào mừng bạn đến với Paul.
+                        <br>
+                        Chúng tôi là Paul, thương hiệu trực thuộc Công Ty Cổ Phần Hazza (CTCP Hazza) có địa chỉ đăng
+                        ký tại 118/28 đường Nguyễn Văn Hưởng, P. Thảo Điền, TP. Thủ Đức, Tp. Hồ Chí Minh. Mã Số Thuế
+                        (MST) là: 0 3 1 5 2 2 5 9 2 0. Thành lập Sàn Giao Dịch Thương Mại Điện Tử thông qua website
+                        đã được đăng ký chính thức với Bộ Công Thương Việt Nam.
+                        <br>
+                        Khi bạn truy cập vào website đồng nghĩa với việc bạn đã đồng ý với các điều khoản sử
+                        dụng mà chúng tôi đưa ra. “Điều Khoản Sử Dụng” có thể được thay đổi, chỉnh sửa, thêm hoặc lược
+                        bỏ bất kỳ phần nào, bất kỳ lúc nào và có hiệu lực ngay khi được đăng tải.
+                        <br>
+                        Dưới đây là chi tiết của “Điều Khoản Sử Dụng” mà chúng tôi mong muốn bạn nắm kỹ trong quá trình
+                        sử dụng website để có những trải nghiệm mua sắm an toàn và tốt nhất.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="accordion accordion-flush border-top border-black" id="accordionFlush">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <h4 class="mb-0 py-3">THƯƠNG HIỆU VÀ BẢN QUYỀN</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                    Mọi quyền sở hữu trí tuệ (đã đăng ký hoặc chưa đăng ký), nội dung
+                                                    thông tin và tất cả các thiết kế, văn bản, đồ họa, hình ảnh, video,
+                                                    âm nhạc, mã nguồn,… trong phạm vi website bạn đang xem đều thuộc sở
+                                                    hữu tài sản. Toàn bộ nội dung của trang web được bảo vệ
+                                                    bởi luật bản quyền của Việt Nam và các công ước quốc tế.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        <h4 class="mb-0 py-3">QUY ĐỊNH VỀ TRUY CẬP VÀ SỬ DỤNG WEBSITE</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                    Khi truy cập vào website của chúng tôi, bạn cần đảm bảo việc bạn có
+                                                    đủ hành vi dân sự để thực hiện các giao dịch mua hàng theo quy định
+                                                    hiện hành của pháp luật Việt Nam. Hãy đảm bảo rằng bạn đã đủ 16 tuổi
+                                                    hoặc truy cập dưới sự giám sát của các thành viên trong gia đình hay
+                                                    người giám hộ hợp pháp.
+                                                    <br>
+                                                    Trong suốt quá trình đăng ký, sử dụng website,… bạn có toàn quyền
+                                                    quyết định mình sẽ được nhận thư quảng cáo, tin tức về các chương
+                                                    trình khuyến mãi thông qua Email mà bạn đã đăng ký hay không. Nếu
+                                                    không muốn tiếp tục nhận Email từ, bạn cũng có toàn quyền từ
+                                                    chối bằng cách nhấp vào đường dẫn ở dưới cùng trong thư điện tử được
+                                                    gửi đến bất kỳ.
+                                                    <br>
+                                                 không mong muốn bạn sử dụng bất kỳ chương trình, công cụ hay
+                                                    hình thức nào khác để can thiệp vào nội dung, hệ thống hay làm thay
+                                                    đổi cấu trúc dữ liệu của website chúng tôi. Các hình thức phát tán,
+                                                    truyền bá, cổ vũ không được phép hay can thiệp, thay đổi, xóa bỏ nội
+                                                    dung, cấu trúc dữ liệu hệ thống của chúng tôi một cách bất hợp pháp
+                                                    đều sẽ có hình thức xử lý từ. Mọi cá nhân hoặc tổ chức nếu vi
+                                                    phạm sẽ chịu truy tố trước pháp luật và phải bồi thường thiệt hại đã
+                                                    gây ra.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">
+                                        <h4 class="mb-0 py-3">QUY ĐỊNH VỀ BẢO MẬT THÔNG TIN</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                 luôn coi trọng việc bảo mật thông tin và cam kết sẽ sử dụng
+                                                    mọi biện pháp tốt nhất nhằm bảo vệ thông tin bạn đã cung cấp cho
+                                                    chúng tôi.
+                                                    Ở một mặt khác, bạn hoàn toàn có thể truy cập vào website và trình
+                                                    duyệt mà không cần phải cung cấp chi tiết cá nhân. Thông tin của
+                                                    bạn, nếu có, cũng đều sẽ được mã hóa để đảm bảo an toàn trong suốt
+                                                    quá trình giao dịch tại website. Riêng trường hợp được cơ
+                                                    quan pháp luật yêu cầu, chúng tôi sẽ buộc phải cung cấp những thông
+                                                    tin này cho các cơ quan pháp luật.
+                                                    <br>
+                                                    Vui lòng xem kỹ hơn quy định tại phần Chính sách Bảo mật Thông tin.
+                                                    <br>
+                                                 tuân thủ các biện pháp đảm bảo an toàn/ bảo mật thông tin tài
+                                                    khoản thanh toán cá nhân theo quy định của pháp luật cũng như các
+                                                    quy định và các khuyến nghị về giám sát của Ngân hàng Nhà nước.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                        aria-expanded="false" aria-controls="flush-collapseFour">
+                                        <h4 class="mb-0 py-3">ĐIỀU KHOẢN VỀ THÔNG TIN SẢN PHẨM, GIÁ CẢ, DỊCH VỤ VÀ CÁC
+                                            NỘI DUNG KHÁC</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                    Chúng tôi cam kết sẽ cung cấp thông tin sản phẩm, giá cả, dịch vụ và
+                                                    nội dung khác chính xác nhất đến người dùng. Tuy nhiên, đôi lúc vẫn
+                                                    có sai sót xảy ra, ví dụ như trường hợp giá cả sản phẩm, phí vận
+                                                    chuyển, hình ảnh sản phẩm,… không hiển thị chính xác ở một vài thời
+                                                    điểm và trên một số thiết bị. Tùy theo từng trường hợp cụ thể,
+                                                 sẽ liên hệ trực tiếp nhằm hướng dẫn hoặc thông báo đến bạn để
+                                                    khắc phục và xử lý.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                        aria-expanded="false" aria-controls="flush-collapseFive">
+                                        <h4 class="mb-0 py-3">PHƯƠNG THỨC THANH TOÁN</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                    Hiện tại, chúng tôi đang có các phương thức thanh toán sau:
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        Tại cửa hàng:
+                                                    </li>
+                                                    <ul>
+                                                        <li>Thanh toán bằng tiền mặt</li>
+                                                        <li>Thanh toán bằng ví điện tử Momo</li>
+                                                        <li>
+                                                            Thanh toán bằng thẻ, mã QR từ ví điện tử và các ứng dụng
+                                                            ngân hàng qua dịch vụ POS (Point of sale).
+                                                        </li>
+                                                    </ul>
+                                                    <li>
+                                                        Đặt mua hàng tại website.vn:
+                                                    </li>
+                                                    <ul>
+                                                        <li>COD (cash on delivery): là hình thức thanh toán trực tiếp
+                                                            bằng tiền mặt khi bạn nhận hàng.</li>
+                                                        <li>Thanh toán bằng thẻ nội địa – được phát hành bởi các ngân
+                                                            hàng trong nước (Vietcombank, Vietinbank, Sacombank,…). Lưu
+                                                            ý: Thẻ của bạn cần được đăng ký dịch vụ thanh toán thực
+                                                            tuyến tại ngân hàng để có thể sử dụng được hình thức này.
+                                                        </li>
+                                                        <li>
+                                                            Thanh toán bằng thẻ quốc tế – được các ngân hàng trong nước
+                                                            liên kết với những tổ chức thẻ quốc tế (Visa, Master Card,
+                                                            JCB,…) phát hành.
+                                                        </li>
+                                                        <li>
+                                                            Thanh toán bằng QR Code thông qua cổng thanh toán điện tử.
+                                                        </li>
+                                                        <li>
+                                                            Thanh toán bằng ví điện tử Momo.
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                        aria-expanded="false" aria-controls="flush-collapseSix">
+                                        <h4 class="mb-0 py-3">CHÍNH SÁCH KHUYẾN MÃI</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                    Với mong muốn giúp bạn có những trải nghiệm mua sắm tốt nhất,
+                                                    sẽ áp dụng một số chính sách khuyến mãi cố định hoặc tùy thời điểm
+                                                    về phí giao hàng, quà tặng và ưu đãi đặc biệt, được ghi rõ tại FAQs
+                                                    – mục “III. Chính sách Khuyến mãi”.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                        aria-expanded="false" aria-controls="flush-collapseSeven">
+                                        <h4 class="mb-0 py-3">THAY ĐỔI HOẶC HỦY BỎ CÁC GIAO DỊCH</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                    Bạn được quyền thay đổi hoặc chấm dứt giao dịch theo hướng dẫn đã
+                                                    được ghi rõ tại phần FAQs – mục “I. Mua Hàng – Đặt Hàng – Tra Cứu
+                                                    Đơn Hàng”.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight"
+                                        aria-expanded="false" aria-controls="flush-collapseEight">
+                                        <h4 class="mb-0 py-3">QUY ĐỊNH ĐỔI HÀNG VÀ BẢO HÀNH</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseEight" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                <ol>
+                                                    <li>Quy định đổi hàng:</li>
+                                                    <ul>
+                                                        <li>Với sản phẩm mua tại cửa hàng, thời hạn đổi sản phẩm là 07
+                                                            ngày, tính từ ngày bạn mua hàng. Còn với sản phẩm mua
+                                                            online, thời hạn đổi sản phẩm là 14 ngày, tính từ ngày nhận
+                                                            được hàng.
+                                                        </li>
+                                                        <li>
+                                                            Chỉ áp dụng đổi hàng 01 lần duy nhất cho sản phẩm và
+                                                            Thời trang. Không hỗ trợ đổi sản phẩm thuộc nhóm Phụ kiện.
+                                                        </li>
+                                                        <li>
+                                                            Sản phẩm đổi phải còn mới, còn nguyên tem, hộp, nhãn mác và
+                                                            chưa có dấu hiệu đã sử dụng, đã giặt tẩy, bám bẩn hay biến
+                                                            dạng.
+                                                        </li>
+                                                        <li>
+                                                         sẽ không áp dụng việc đổi hàng với các sản phẩm phụ
+                                                            kiện, các sản phẩm đang áp dụng chương trình Sale Off từ 50%
+                                                            trở lên, các sản phẩm thuộc phiên bản giới hạn (limited
+                                                            edition).
+                                                        </li>
+                                                        <li>
+                                                            Việc đổi hàng chỉ áp dụng tại đúng kênh (cửa hàng) mà bạn đã
+                                                            mua hàng.
+                                                        </li>
+                                                        <li>
+                                                            Không áp dụng việc trả hàng – hoàn tiền trong bất cứ trường
+                                                            hợp nào. Mong bạn thông cảm.
+                                                        </li>
+                                                        <li>
+                                                         ưu tiên hỗ trợ đổi size. Trong trường hợp mong muốn
+                                                            đổi sang 01 sản phẩm khác, chúng tôi vẫn hỗ trợ bạn:
+                                                        </li>
+                                                        <ul>
+                                                            <li>
+                                                                Nếu bạn muốn đổi sang sản phẩm có giá trị cao hơn, bạn
+                                                                sẽ cần bù khoản chênh lệch tại thời điểm đổi (nếu có).
+                                                            </li>
+                                                            <li>
+                                                                Nếu bạn muốn đổi sang sản phẩm có giá trị thấp hơn,
+                                                                chúng tôi sẽ không hoàn lại tiền.
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                    <p class="my-3">Để đổi hàng, bạn có thể xem thêm hướng dẫn tại phần
+                                                        FAQs – mục “III. Quy định Đổi hàng – Bảo hành sản phẩm”.</p>
+                                                    <li>Quy định bảo hành:</li>
+                                                    <ul>
+                                                        <li>
+                                                            Đối với các sản phẩm, hỗ trợ bảo hành trong vòng
+                                                            06 tháng kể từ ngày mua với các trường hợp bung keo, sứt
+                                                            chỉ, gãy đế hoặc 1 đổi 1 với trường hợp phát sinh lỗi từ
+                                                            trong quá trình sản xuất.
+                                                        </li>
+                                                        <li>
+                                                            Đối với các sản phẩm thuộc nhóm thời trang và phụ kiện,
+                                                            chính sách bảo hành không được áp dụng. Mong bạn thông cảm.
+                                                        </li>
+                                                        <li>
+                                                            Để việc bảo hành thuận tiện và nhanh chóng hơn, bạn vui lòng
+                                                            vệ sinh sạch sẽ trước khi gửi về. Chúng tôi xin
+                                                            từ chối thực hiện việc bảo hành nếu như sản phẩm chưa được
+                                                            vệ sinh khi nhận được.
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        Để yêu cầu bảo hành sản phẩm, bạn có thể xem thêm hướng dẫn tại
+                                                        phần FAQs – mục “III. Quy định Đổi hàng – Bảo hành sản phẩm”.
+                                                    </p>
+
+                                                </ol>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine"
+                                        aria-expanded="false" aria-controls="flush-collapseNine">
+                                        <h4 class="mb-0 py-3">QUYỀN PHÁP LÝ</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseNine" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <div>
+                                                <p>
+                                                    Bạn có toàn quyền yêu cầu chúng tôi sửa lại những sai sót trong dữ
+                                                    liệu của bạn. Bất cứ lúc nào bạn cũng có quyền yêu cầu chúng tôi
+                                                    ngưng sử dụng dữ liệu cá nhân của bạn cho mục đích tiếp thị hoặc
+                                                    ngưng nhận thông tin quảng cáo, khuyến mãi từ thông qua
+                                                    Email.
+                                                    <br>
+                                                    Các điều kiện, điều khoản và nội dung tại website được điều chỉnh
+                                                    theo luật pháp Việt Nam và Tòa Án có thẩm quyền tại Việt Nam sẽ giải
+                                                    quyết bất kỳ tranh chấp nếu có phát sinh từ việc sử dụng trái phép
+                                                    nội dung.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section id="footer">
+            <!-- PC -->
+            <div class="footer-pc container-fluid text-white bg-4c4c4c">
+                <div class="row">
+                    <div class="col-3 px-5">
+                        <div class="row my-5">
+                            <div class="col-12">
+                                <img src="../img/entire/logo-white.png" alt="logo" width="80%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="row my-5">
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    sản phẩm
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/product/tshirt.html">
+                                        <li class="footer-item text-CCCCCC">T-Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/shirt.html">
+                                        <li class="footer-item text-CCCCCC">Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/outerswear.html">
+                                        <li class="footer-item text-CCCCCC">Outerswear</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/pants.html">
+                                        <li class="footer-item text-CCCCCC">Pants</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/shorts.html">
+                                        <li class="footer-item text-CCCCCC">Shorts</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    công ty
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/transfer.html">
+                                        <li class="footer-item text-CCCCCC">Liên hệ chuyển nhượng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    hỗ trợ
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/faqs.html">
+                                        <li class="footer-item text-CCCCCC">FAQs</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/security.html">
+                                        <li class="footer-item text-CCCCCC">bảo mật thông tin</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/policy.html">
+                                        <li class="footer-item text-CCCCCC">Chính sách chung</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/order.html">
+                                        <li class="footer-item text-CCCCCC">Tra cứu đơn hàng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    liên hệ
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="mailto:nvminh162@gmail.com">
+                                        <li class="footer-item text-CCCCCC">Email góp ý</li>
+                                    </a>
+                                    <li class="footer-item text-CCCCCC">Hotline</li>
+                                    <a class="text-decoration-none text-white" href="tel:0353999798">
+                                        <li class="footer-item text-CCCCCC">0353 999 798</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="tel:0388800723">
+                                        <li class="footer-item text-CCCCCC">0388 800 723</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    mạng xã hội
+                                </h4>
+                                <ul class="footer-list list-unstyled d-flex flex-column flex-xl-row">
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.facebook.com/nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-facebook fs-1 p-2"></i></li>
+                                    </a>
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.instagram.com/nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-instagram fs-1 p-2"></i></li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="https://www.tiktok.com/@nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i class="fa-brands fa-tiktok fs-1 p-2"></i>
+                                        </li>
+                                    </a>
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.threads.net/@nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-threads fs-1 p-2"></i></li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    đăng ký nhận mail
+                                </h4>
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-10 px-0">
+                                            <input class="w-100 p-2 rounded-2" type="email" placeholder="Email"
+                                                name="footer_email--PC" id="footer_email--PC" required>
+                                        </div>
+                                        <div class="col-2 px-0">
+                                            <button style="margin-left: -10px;" class="py-2 w-100 text-bg-dark"
+                                                type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-6">
+                                <img class="m-5" src="../img/entire/license.png" alt="" width="50%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <= Tablet, Mobile -->
+            <div class="footer-tablet container-fluid p-0 text-white bg-4c4c4c">
+                <div class="accordion" id="accordionFooter">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <h4 class="footer-heading text-uppercase">
+                                    sản phẩm
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/product/tshirt.html">
+                                        <li class="footer-item text-CCCCCC">T-Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/shirt.html">
+                                        <li class="footer-item text-CCCCCC">Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/outerswear.html">
+                                        <li class="footer-item text-CCCCCC">Outerswear</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/pants.html">
+                                        <li class="footer-item text-CCCCCC">Pants</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/shorts.html">
+                                        <li class="footer-item text-CCCCCC">Shorts</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                <h4 class="footer-heading text-uppercase">
+                                    về công ty
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/transfer.html">
+                                        <li class="footer-item text-CCCCCC">Liên hệ chuyển nhượng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                <h4 class="footer-heading text-uppercase">
+                                    hỗ trợ
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/faqs.html">
+                                        <li class="footer-item text-CCCCCC">FAQs</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/security.html">
+                                        <li class="footer-item text-CCCCCC">Bảo mật thông tin</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/policy.html">
+                                        <li class="footer-item text-CCCCCC">Chính sách chung</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/order.html">
+                                        <li class="footer-item text-CCCCCC">Tra cứu đơn hàng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                <h4 class="footer-heading text-uppercase">
+                                    liên hệ
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="mailto:nvminh162@gmail.com">
+                                        <li class="footer-item text-CCCCCC">Email góp ý</li>
+                                    </a>
+                                    <li class="footer-item text-CCCCCC">Hotline</li>
+                                    <a class="text-decoration-none text-white" href="tel:0353999798">
+                                        <li class="footer-item text-CCCCCC">0353 999 798</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="tel:0388800723">
+                                        <li class="footer-item text-CCCCCC">0388 800 723</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0">
+                        <h4 class="footer-heading mb-4 text-uppercase">
+                            mạng xã hội
+                        </h4>
+                        <ul class="footer-list list-unstyled d-flex">
+                            <a class="text-decoration-none text-white" href="https://www.facebook.com/nvminh162">
+                                <li class="footer-item text-CCCCCC"><i
+                                        class="fa-brands fa-square-facebook fs-1 p-2"></i></li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.instagram.com/nvminh162">
+                                <li class="footer-item text-CCCCCC"><i
+                                        class="fa-brands fa-square-instagram fs-1 p-2"></i></li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.tiktok.com/@nvminh162">
+                                <li class="footer-item text-CCCCCC"><i class="fa-brands fa-tiktok fs-1 p-2"></i>
+                                </li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.threads.net/@nvminh162">
+                                <li class="footer-item text-CCCCCC"><i class="fa-brands fa-square-threads fs-1 p-2"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0">
+                        <h4 class="footer-heading mb-4 text-uppercase">
+                            đăng ký nhận mail
+                        </h4>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-10 px-0">
+                                    <input class="w-100 p-2 rounded-2" type="email" placeholder="Email"
+                                        name="footer_email--Mobile" id="footer_email--Mobile" required>
+                                </div>
+                                <div class="col-2 px-0">
+                                    <button class="p-2 w-100 text-bg-dark" type="submit"><i
+                                            class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0 text-center">
+                        <a class="px-3 py-2 bg-black rounded-3" href="#"><i class="fa-solid fa-arrow-up"
+                                style="color: #ffffff;"></i></a>
+                        Back to top
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0 text-center py-4">
+                        <img src="../img/entire/license.png" alt="" width="20%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Copyright -->
+        <section id="copyright">
+            <div class="footer-copyright text-center py-1 bg-f2f2f2 text-dark fw-medium">
+                Copyright © 2024 <a class="text-decoration-none text-dark" href="#">PAUL'S MENSWEAR.</a>
+                Powered by <a class="text-decoration-none text-dark" href="#">Paul Nguyen</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- script -->
+    <script src="../js/home.js"></script>
+    <script src="../js/search.js"></script>    
+</body>
+
+</html>

@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQS | PAUL'S MENSWEAR ® | Official Website VN</title>
+
+    <link rel="icon" type="image/x-icon" href="../img/favicon/favicon-256.png">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <script src="../bootstrap-5.3.3-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+
+<body>
+    <div class="container-fluid p-0">
+        <!-- Navigation -->
+        <section id="header">
+            <nav class="navbar navbar-expand-lg py-2 bg-body-tertiary fixed-top">
+                <div class="container">
+                    <!--nav toggle -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars fs-5"></i>
+                    </button>
+                    <!--nav logo -->
+                    <a class="navbar-brand me-0 fs-4" href="../html/home.html">
+                        <img class="nav-logo" src="../img/entire/logo-black.jpg" alt="" width="120px">
+                    </a>
+                    <div class="sideBar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium" aria-current="page"
+                                        href="../html/home.html">home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium dropdown-toggle" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        product
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../html/product/tshirt.html">t-shirts</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../html/product/shirt.html">shirts</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../html/product/outerwear.html">outerwears</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../html/product/pants.html">pants</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../html/product/shorts.html">shorts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium" href="../html/news.html">news</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-bold active"
+                                        href="../html/store.html">contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium" href="../../index.html">about</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--nav item  -->
+                    <ul class="nav-list d-flex list-unstyled my-auto">
+                        <li class="nav-item mx-2">
+                            <a class="text-dark fs-5" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                                aria-controls="offcanvasTop">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <div class="dropdown">
+                                <a class="fs-5 text-dark" data-bs-toggle="dropdown" href="#"><i
+                                        class="fa-solid fa-user"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="btn-login">
+                                        <a class="dropdown-item" href="../html/login.html">Đăng nhập</a>
+                                    </li>
+                                    <li class="btn-register">
+                                        <a class="dropdown-item" href="../html/register.html">Đăng ký</a>
+                                    </li>
+                                    <li class="btn-logout">
+                                        <a class="dropdown-item" href="../html/login.html">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2 position-relative">
+                            <a class="text-dark fs-5" href="../html/cart.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="quantity position-absolute top-0 start-100 badge rounded-pill bg-danger">
+                                    0
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- search form -->
+            <div class="search-offcanvas offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form action="">
+                        <div class="input-group mb-3 w-75 d-flex mx-auto">
+                            <input required type="text" class="form-control border-black p-3" placeholder="Search">
+                            <button class="btn border-black px-4" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+                    </form>
+                    <p class="text-center text-danger">Không tìm thấy kết quả khả dụng</p>
+                </div>
+            </div>
+        </section>
+        <!-- breadcumb -->
+        <section id="breadcrumb">
+            <div class="py-3 bg-f2f2f2">
+                <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a class="text-dark text-decoration-none"
+                                href="../html/home.html">Home</a></li>
+                        <li class="breadcrumb-item"><a class="text-dark text-decoration-none"
+                                href="../html/store.html">Contact</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">FREQUENTLY ASKED QUESTIONS</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <!-- FAQs -->
+        <section id="faqs">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-12 text-center">
+                        <h2 class="faqs-title text-uppercase">Frequently Asked Questions</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-12 px-0">
+                        <div class="border-bottom-dotted-2-ccc bg-f2f2f2 py-4 text-center">
+                            <p class="fs-1"><i class="fa-solid fa-location-dot fa-beat-fade"></i></p>
+                            <h5 class="text-uppercase">tìm cửa hàng</h5>
+                            <p>
+                                Mở cửa suốt tuần từ
+                                <br>
+                                9:00 - 22:00
+                            </p>
+                        </div>
+                        <div class="border-bottom-dotted-2-ccc bg-f2f2f2 py-4 text-center">
+                            <p class="fs-1"><i class="fa-solid fa-link fa-beat"></i></p>
+                            <h5 class="text-uppercase">liên hệ hợp tác</h5>
+                            <p>
+                                Hợp tác truyền thông qua email:
+                                <br>
+                                <a class="text-555555" href="mailto:nvminh162@gmail.com">
+                                    nvminh162@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                        <div class="border-bottom-dotted-2-ccc bg-f2f2f2 py-4 text-center">
+                            <p class="fs-1"><i class="fa-regular fa-envelope fa-bounce"></i></p>
+                            <h5 class="text-uppercase">đóng góp ý kiến</h5>
+                            <p>
+                                Mail phản hồi và đóng góp về chất
+                                <br>
+                                lượng dịch vụ:
+                                <a class="text-555555" href="mailto:nvminh162@gmail.com">
+                                    nvminh162@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                        <div class="border-bottom-dotted-2-ccc bg-f2f2f2 py-4 text-center">
+                            <p class="fs-1"><i class="fa-brands fa-rocketchat fa-flip"></i></p>
+                            <h5 class="text-uppercase">chăm sóc khách hàng</h5>
+                            <p>
+                                Làm việc từ thứ 2 - thứ 7 từ:
+                                <br>
+                                9:00 - 17:00
+                                <br>
+                                Hotline:
+                                <a class="text-555555" href="tel:0353999798">
+                                    0353 999 798
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-12">
+                        <div class="accordion accordion-flush border-top border-black" id="accordionFlush">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <h4 class="mb-0 py-3">MUA HÀNG - ĐẶT HÀNG - TRA CỨU ĐƠN HÀNG</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <h5>1. CÁCH THỨC MUA HÀNG TẠI PAUL THẾ NÀO ?</h5>
+                                            <div>
+                                                <p>Để mua hàng, bạn có thể trực tiếp đến hệ thống các cửa hàng chính
+                                                    thức
+                                                    của Paul (tra cứu địa chỉ các cửa hàng tại đây) nhằm có những trải
+                                                    nghiệm mua sắm tốt nhất.</p>
+                                                <p>
+                                                    Hoặc, bạn có thể đặt mua các sản phẩm của chúng tôi ngay tại website
+                                                    theo các bước vô cùng đơn giản như sau:
+                                                </p>
+                                                <ul>
+                                                    <li>Chọn sản phẩm bạn thích.</li>
+                                                    <li>Chọn size và số lượng sản phẩm phù hợp.</li>
+                                                    <li>Hoàn tất các bước đặt hàng khác trên hệ thống.</li>
+                                                    <li>Nhận email xác nhận đặt hàng thành công từ hệ thống Ananas.</li>
+                                                    <li>Đợi chờ thêm một vài ngày để sản phẩm được giao đến bạn.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="accordion_item--section">
+                                            <h5>2. LÀM THẾ NÀO ĐỂ MUA CÁC SẢN PHẨM CÓ TRẠNG THÁI PRE-ORDER (ĐẶT HÀNG
+                                                TRƯỚC)
+                                                CỦA PAUL?</h5>
+                                            <div>
+                                                <p>Đối với các sản phẩm Pre-order, bạn có thể đặt mua tại website theo
+                                                    các bước sau:</p>
+                                                <ul>
+                                                    <li>Chọn sản phẩm yêu thích.</li>
+                                                    <li>Chọn size và số lượng phù hợp.</li>
+                                                    <li>Hoàn tất các bước đặt hàng khác theo quy trình trên hệ thống.
+                                                    </li>
+                                                    <li>Nhận email xác nhận đặt hàng thành công từ hệ thống của PAUL.
+                                                    </li>
+                                                    <li>Đợi đến ngày hẹn để sản phẩm bắt đầu được giao đến tay bạn.</li>
+                                                </ul>
+                                                <p>Lưu ý:</p>
+                                                <ul>
+                                                    <li>Đối với những sản phẩm Pre-order, phương thức thanh toán COD
+                                                        (cash on delivery) sẽ không được áp dụng. Bạn phải thanh toán
+                                                        trước bằng các hình thức thanh toán trực tuyến để có thể đặt
+                                                        hàng thành công.
+                                                    </li>
+                                                    <li>Ngày giao hàng chính thức các sản phẩm Pre-order sẽ được hiển
+                                                        thị khi bạn hoàn tất việc chọn size và số lượng khả dụng sản
+                                                        phẩm đó. Trong một số trường hợp, mong bạn thông cảm vì ngày
+                                                        giao hàng có thể thay đổi từ một lí do không mong muốn, bạn có
+                                                        thể cập nhật thông tin tại chính trang chi tiết của sản phẩm để
+                                                        quyết định liệu có thể chờ đợi hay không.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="accordion_item--section">
+                                            <h5>3. KHI ĐẶT HÀNG TRÊN WEBSITE PAUL, TÔI CÓ NHẬN ĐƯỢC EMAIL HAY CUỘC GỌI
+                                                ĐỂ XÁC NHẬN TÔI ĐÃ ĐẶT HÀNG THÀNH CÔNG HAY KHÔNG?</h5>
+                                            <div>
+                                                <p>Hiện tại, sau khi đặt hàng thành công tại website paulmenswear.vn,
+                                                    bạn sẽ
+                                                    nhận được xác nhận việc đặt hàng bằng email mà bạn đã dùng để đăng
+                                                    ký cùng cuộc gọi xác nhận đơn hàng từ bộ phận Customer Service của
+                                                    Paul.
+                                                </p>
+                                                <p>
+                                                    <strong><i>Một số lưu ý quan trọng:</i></strong>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        Bộ phận Customer Service sẽ liên lạc đến bạn thông qua cuộc gọi
+                                                        khi đơn hàng có sự cố phát sinh, trong khung giờ: Thứ 2 – Thứ 7,
+                                                        8h00 đến 17h00.
+                                                    </li>
+                                                    <li>
+                                                        Paul luôn cố gắng liên lạc với bạn 02 cuộc gọi/ ngày và trong
+                                                        02 ngày liên tiếp. Nếu quá thời hạn trên mà chúng tôi vẫn chưa
+                                                        thể liên hệ để trao đổi vấn đề phát sinh, đơn hàng của bạn sẽ bị
+                                                        hủy trên hệ thống.
+                                                    </li>
+                                                    <li>
+                                                        Ở một số thời điểm hệ thống hoạt động kém ổn định (không gửi
+                                                        email xác nhận), bạn có thể chủ động liên hệ bộ phận Customer
+                                                        Service để nhận được thông tin đơn hàng.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="accordion_item--section">
+                                            <h5>4. LÀM THẾ NÀO TÔI CÓ THỂ TRA CỨU, HỦY BỎ HAY THAY ĐỔI ĐƠN HÀNG?</h5>
+                                            <div>
+                                                <p>
+                                                    Để tra cứu đơn hàng, bạn có thể truy cập mục Tra cứu đơn hàng, điền
+                                                    đầy đủ thông tin về “mã đơn hàng” và “email/số điện thoại” mà bạn đã
+                                                    đăng ký.
+                                                </p>
+                                                <p>
+                                                    Ở phần tra cứu đơn hàng, ngoài việc theo dõi quy trình xử lý, bạn
+                                                    cũng có thể trực tiếp hủy bỏ đơn hàng nếu đơn hàng đó chưa được
+                                                    chuyển qua giao nhận. Trong trường hợp đơn hàng đã được Paul
+                                                    chuyển qua đơn vị giao nhận, bạn vui lòng liên hệ trực tiếp với bộ
+                                                    phận Customer Service qua số hotline 0353 999 798 để được hướng dẫn
+                                                    chi tiết hơn.
+                                                </p>
+                                                <p>
+                                                    Ngoài ra, bạn cũng có thể liên lạc với bộ phận Customer Service
+                                                    trong trường hợp có thay đổi thông tin đơn hàng hay mong muốn đổi
+                                                    qua một sản phẩm khác.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="accordion_item--section">
+                                            <h5>
+                                                5. ĐỐI VỚI ĐƠN HÀNG ĐÃ THANH TOÁN BẰNG PHƯƠNG THỨC THANH TOÁN TRỰC
+                                                TUYẾN, KHI HỦY ĐƠN HÀNG TÔI CÓ ĐƯỢC HOÀN LẠI KHOẢN THANH TOÁN HAY KHÔNG?
+                                            </h5>
+                                            <div>
+                                                <p>
+                                                    Khi yêu cầu hủy đơn hàng đó đáp ứng đúng hướng dẫn thay đổi hoặc hủy
+                                                    bỏ các giao dịch của Paul, chúng tôi sẽ hoàn lại khoản thanh toán
+                                                    cho bạn dù với bất cứ lí do gì.
+                                                </p>
+                                                <p>
+                                                    Thời gian hoàn lại khoản thanh toán tuỳ thuộc vào loại thẻ mà bạn sử
+                                                    dụng để thanh toán, thông thường là từ 1-3 ngày làm việc đối với thẻ
+                                                    nội địa, và 7-10 ngày làm việc đối với thẻ quốc tế kể từ khi đơn
+                                                    hàng bị hủy. Trong một số trường hợp có sự cố đến từ việc xử lí giao
+                                                    dịch từ ngân hàng hay cổng thanh toán, thời gian hoàn tiền có thể sẽ
+                                                    lâu hơn.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="accordion_item--section">
+                                            <h5>
+                                                6. TÔI CÓ ĐƯỢC KIỂM TRA SẢN PHẨM TRƯỚC KHI NHẬN HÀNG HAY KHÔNG?
+                                            </h5>
+                                            <div>
+                                                <p>
+                                                    Hiện tại, đơn hàng gửi đến bạn sẽ được chúng tôi niêm phong cẩn thận
+                                                    và bạn sẽ không thể kiểm tra sản phẩm trước khi nhận hàng nhằm tránh
+                                                    những vấn đề phát sinh khác nhau trong lúc vận chuyển và giao dịch
+                                                    mà Ananas không thể kiểm soát được. Mong bạn thông cảm.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        <h4 class="mb-0 py-3">PHƯƠNG THỨC THANH TOÁN </h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <h5>NHỮNG PHƯƠNG THỨC THANH TOÁN NÀO ĐANG ĐƯỢC PAUL ÁP DỤNG?</h5>
+                                            <div>
+                                                <p>
+                                                    Hiện tại, chúng tôi đang có các hình thức thanh toán sau:
+                                                </p>
+                                                <p>
+                                                    – Tại cửa hàng:
+                                                </p>
+                                                <ul>
+                                                    <li>Thanh toán bằng tiền mặt</li>
+                                                    <li>Thanh toán bằng ví điện tử Momo</li>
+                                                    <li>Thanh toán bằng thẻ, mã QR từ ví điện tử và các ứng dụng ngân
+                                                        hàng qua dịch vụ POS (Point of sale).</li>
+                                                </ul>
+                                                <p>
+                                                    – Mua hàng online tại website <a
+                                                        class="text-decoration-none text-dark"
+                                                        href="#">paulmenswear.vn</a>:
+                                                </p>
+                                                <ul>
+                                                    <li>COD (cash on delivery): thanh toán bằng tiền mặt khi bạn nhận
+                                                        hàng.
+                                                    </li>
+                                                    <li>Thanh toán bằng thẻ nội địa – được phát hành bởi các ngân hàng
+                                                        trong nước (Vietcombank, Vietinbank, Sacombank,…). Lưu ý: Thẻ
+                                                        của bạn cần được đăng ký dịch vụ thanh toán thực tuyến tại ngân
+                                                        hàng để có thể sử dụng được hình thức này.
+                                                    </li>
+                                                    <li>
+                                                        Thanh toán bằng thẻ quốc tế – được các ngân hàng trong nước liên
+                                                        kết với những tổ chức thẻ quốc tế (Visa, Master Card, JCB,…)
+                                                        phát hành.
+                                                    </li>
+                                                    <li>
+                                                        Thanh toán bằng QR Code thông qua cổng thanh toán điện tử.
+                                                    </li>
+                                                    <li>
+                                                        Thanh toán bằng ví điện tử Momo: là hình thức thanh toán sử dụng
+                                                        tài khoản ví Momo cá nhân của khách hàng.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">
+                                        <h4 class="mb-0 py-3">CHƯƠNG TRÌNH KHUYẾN MÃI</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <h5>1. CÁC CHƯƠNG TRÌNH KHUYẾN MÃI CỦA ANANAS CÓ GÌ ?</h5>
+                                            <div>
+                                                <p>
+                                                    Hiện tại, chúng tôi đang áp dụng các chương trình khuyến mãi không
+                                                    thời hạn sau:
+                                                </p>
+                                                <ul>
+                                                    <li>Chương trình MIỄN PHÍ VẬN CHUYỂN (Free Shipping) toàn quốc với
+                                                        mỗi hóa đơn từ 900.000 VNĐ, áp dụng cho tất cả sản phẩm tại
+                                                        website ananas.vn.</li>
+                                                    <li>Chương trình BUY MORE – PAY LESS áp dụng với các sản phẩm được
+                                                        phân loại phụ kiện (ngoại trừ Bag & Backpack) trên cả kênh
+                                                        online và offline, cụ thể:</li>
+                                                    <li class="list-unstyled">
+                                                        <ul>
+                                                            <li>
+                                                                Giảm 5% trên giá phụ kiện khi mua 2 sản phẩm phụ kiện
+                                                                cùng
+                                                                loại bất kì trong một hoá đơn.
+                                                            </li>
+                                                            <li>
+                                                                Giảm 10% trên giá phụ kiện khi mua 3 sản phẩm phụ kiện
+                                                                cùng
+                                                                loại bất kì trong một hoá đơn.
+                                                            </li>
+                                                            <li>
+                                                                Giảm 15% trên giá phụ kiện khi mua từ 4 sản phẩm phụ
+                                                                kiện
+                                                                cùng loại bất kì trở lên trong một hoá đơn.
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        Chương trình BUY 2 GET 10% OFF áp dụng với tất cả áo Basic Tee
+                                                        trên cả kênh online và offline, cụ thể khi mua từ 2 áo Basic Tee
+                                                        bất kì trở lên trong một hoá đơn, hệ thống sẽ tự động tính giảm
+                                                        10% cho bạn trên mỗi sản phẩm áo.
+                                                    </li>
+                                                </ul>
+                                                <p>
+                                                    Lưu ý:
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        Ưu đãi sẽ được hệ thống tự động áp dụng khi hoá đơn đạt đủ điều
+                                                        kiện tại trang điền “Thông Tin Mua Hàng”.
+                                                    </li>
+                                                    <li>
+                                                        Chương trình Free Shipping chỉ áp dụng cho phí giao hàng, không
+                                                        áp dụng trong các trường hợp đổi hàng hoặc bảo hành.
+                                                    </li>
+                                                </ul>
+                                                <p>
+                                                    Các chương trình khuyến mãi khác nằm trong phân mục này sẽ được
+                                                    chúng tôi tiếp tục cập nhật khi có những thông báo chính thức trên
+                                                    Website, Email và Fanpage Ananas.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="accordion_item--section">
+                                            <h5>2. LÀM SAO ĐỂ TÔI CÓ THỂ CẬP NHẬT CÁC CHƯƠNG TRÌNH KHUYẾN MÃI TỪ ANANAS
+                                                ?</h5>
+                                            <div>
+                                                <p>
+                                                    Có 2 cách để bạn luôn cập nhật kịp thời và không bỏ lỡ các chương
+                                                    trình khuyến mãi, ưu đãi đặc biệt từ Ananas là:
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        Để chế độ xem trước các bài đăng của chúng tôi tại Fanpage
+                                                        Ananas.
+                                                    </li>
+                                                    <li>
+                                                        Hoặc Subcribe và để lại địa chị email để chúng tôi có thể gửi
+                                                        đến bạn các thông tin mới nhất từ Ananas.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="accordion_item--section">
+                                            <h5>3. TÔI CÓ THỂ SỬ DỤNG MÃ KHUYẾN MÃI CHO CẢ MUA HÀNG ONLINE VÀ OFFLINE?
+                                            </h5>
+                                            <div>
+                                                <p>
+                                                    Tùy vào chương trình mà mã khuyến mãi của bạn có thể áp dụng cho cả
+                                                    đơn hàng mua trực tiếp tại cửa hàng và tại website
+                                                    hoặc chỉ áp dụng cho 1 hình thức mua hàng.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="accordion_item--section">
+                                            <h5>4. MÃ KHUYẾN MÃI CỦA TÔI CÓ THỜI HẠN LÀ BAO LÂU VÀ CÓ THỂ DÙNG ĐỒNG THỜI
+                                                VỚI CÁC CHƯƠNG TRÌNH KHUYẾN MÃI KHÁC KHÔNG?</h5>
+                                            <div>
+                                                <p>
+                                                    Tùy vào chương trình mà mã khuyến mãi của bạn có thể áp dụng cho cả
+                                                    đơn hàng mua trực tiếp tại cửa hàng và tại website
+                                                    hoặc chỉ áp dụng cho 1 hình thức mua hàng.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                        aria-expanded="false" aria-controls="flush-collapseFour">
+                                        <h4 class="mb-0 py-3">GIAO HÀNG - VẬN CHUYỂN</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <h5>1. TÔI CÓ TỐN PHÍ VẬN CHUYỂN KHI ĐẶT HÀNG HAY KHÔNG VÀ MỨC PHÍ LÀ BAO
+                                                NHIÊU?</h5>
+                                            <div>
+                                                <p>
+                                                    Phí vận chuyển sẽ được tính tùy theo khu vực và sẽ được hiển thị sau
+                                                    khi bạn nhập đầy đủ các thông tin cần thiết tại trang “Thông Tin Mua
+                                                    Hàng”.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="accordion_item--section">
+                                            <h5>
+                                                2. SẼ MẤT BAO LÂU ĐỂ TÔI NHẬN ĐƯỢC HÀNG TỪ Paul?
+                                            </h5>
+                                            <div>
+                                                <p>
+                                                    Thời gian giao hàng dự kiến ở nội thành TP.HCM sẽ mất từ 2-3 ngày;
+                                                    ngoại thành và các thành phố lớn sẽ từ 3-5 ngày; các tỉnh thành khác
+                                                    sẽ mất khoảng từ 5-7 ngày.
+                                                </p>
+                                                <p>
+                                                    Đối với các đơn hàng pre-order, thời gian giao hàng sẽ bắt đầu được
+                                                    tính từ ngày mở bán chính thức của sản phẩm đó.
+                                                </p>
+                                                <p>
+                                                    <strong><i>Một số lưu ý quan trọng:</i></strong>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        Thời gian giao hàng trên được tính kể từ ngày đơn vị vận chuyển
+                                                        bắt đầu phát hàng đi, chưa bao gồm thời gian xử lý đơn hàng.
+                                                    </li>
+                                                    <li>
+                                                        Các đơn hàng sẽ không được giao vào các ngày Chủ nhật và ngày
+                                                        Lễ.
+                                                    </li>
+                                                    <li>
+                                                        Trong thời gian đơn hàng được chuyển đi, nếu có nhu cầu thay đổi
+                                                        thông tin địa chỉ nhận hàng, tuỳ trường hợp có thể sẽ phải thanh
+                                                        toán thêm phí vận chuyển phát sinh.
+                                                    </li>
+                                                    <li>
+                                                        Trong một số thời điểm, việc vận chuyển sẽ bị quá tải, dẫn đến
+                                                        đơn hàng của bạn sẽ chậm trễ hơn so với thời gian dự kiến. Mong
+                                                        bạn thông cảm và chờ đợi thêm một vài ngày nữa.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="accordion_item--section">
+                                            <h5>
+                                                3. NẾU TÔI ĐẶT MUA TẠI WEBSITE ANANAS.VN NHƯNG MUỐN NHẬN SẢN PHẨM TẠI
+                                                CỬA HÀNG THÌ CÓ ĐƯỢC KHÔNG?
+                                            </h5>
+                                            <div>
+                                                <p>
+                                                    Do bộ phận cửa hàng và kho online là 2 bộ phận làm việc và chịu
+                                                    trách nhiệm riêng biệt nên sản phẩm bạn đặt tại website ananas.vn sẽ
+                                                    không thể nhận tại bất kì cửa hàng Ananas nào trong hệ thống.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="accordion_item--section">
+                                            <h5>
+                                                4. ANANAS CÓ GIAO HÀNG QUỐC TẾ?
+                                            </h5>
+                                            <div>
+                                                <p>
+                                                    Hiện tại, chúng tôi chỉ hỗ trợ cho các đơn hàng tại lãnh thổ Việt
+                                                    Nam. Các đơn hàng có yêu cầu vận chuyển ra nước ngoài, vui lòng liên
+                                                    hệ bộ phận Customer Service để được hướng dẫn chi tiết.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-bg-light border-black text-uppercase"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                        aria-expanded="false" aria-controls="flush-collapseFive">
+                                        <h4 class="mb-0 py-3">ĐỔI - BẢO HÀNH SẢN PHẨM</h4>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlush">
+                                    <div class="accordion-body text-bg-light border-black">
+                                        <div class="accordion_item--section">
+                                            <h5>
+                                                1. QUY ĐỊNH ĐỔI HÀNG CỦA PAUL NHƯ THẾ NÀO ?
+                                            </h5>
+                                            <div>
+                                                <p>
+                                                    Paul luôn mong mỗi sản phẩm khi đến với bạn đều là những sản phẩm
+                                                    thực sự phù hợp và khiến bạn hài lòng. Tuy vậy, chúng tôi vẫn có một
+                                                    số quy định về việc đổi hàng để bạn tham khảo trong trường hợp bạn
+                                                    chưa ưng ý với sản phẩm sau khi đã mua về. Cụ thể như sau:
+                                                </p>
+                                                <p>
+                                                    <strong>
+                                                        <i>Quy định chung cho việc đổi hàng:</i>
+                                                    </strong>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        Không áp dụng việc trả hàng – hoàn tiền trong bất cứ trường hợp
+                                                        nào. Mong bạn thông cảm.
+                                                    </li>
+                                                    <li>
+                                                        Sản phẩm đổi phải còn mới, còn nguyên tem, hộp, nhãn mác và chưa
+                                                        có dấu hiệu đã sử dụng, đã giặt tẩy, bám bẩn hay biến dạng.
+                                                    </li>
+                                                    <li>
+                                                        Ananas ưu tiên hỗ trợ đổi size. Trong trường hợp mong muốn đổi
+                                                        sang 01 sản phẩm khác, chúng tôi vẫn hỗ trợ bạn:
+                                                        <ul>
+                                                            <li>
+                                                                Nếu sản phẩm muốn đổi ngang giá trị hoặc có giá trị cao
+                                                                hơn, bạn sẽ cần bù khoản chênh lệch tại thời điểm đổi
+                                                                (nếu có).
+                                                            </li>
+                                                            <li>
+                                                                Nếu bạn mong muốn đổi sản phẩm có giá trị thấp hơn,
+                                                                chúng tôi sẽ không hoàn lại tiền.
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        Ananas sẽ không áp dụng việc đổi hàng với các sản phẩm phụ kiện,
+                                                        các sản phẩm đang áp dụng chương trình Sale Off từ 50% trở lên,
+                                                        các sản phẩm thuộc phiên bản giới hạn (limited edition) hoặc các
+                                                        sản phẩm có dấu hiệu đã qua sử dụng, đã giặt tẩy, bám bẩn hay
+                                                        biến dạng.
+                                                    </li>
+                                                    <li>
+                                                        Ananas sẽ không áp dụng việc hoàn trả tiền mặt dù bất cứ trường
+                                                        hợp nào. Mong bạn thông cảm.
+                                                    </li>
+                                                </ul>
+                                                <p>
+                                                    <strong>
+                                                        <i>Đối với các sản phẩm mua trực tiếp tại cửa hàng:</i>
+                                                    </strong>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        Thời hạn đổi hàng với sản phẩm và thời trang là 07 ngày,
+                                                        tính từ ngày bạn mua hàng.
+                                                    </li>
+                                                    <li>
+                                                        Việc đổi sản phẩm chỉ áp dụng tại cửa hàng mà bạn đã mua hàng.
+                                                        Không áp dụng đổi tại cửa hàng khác.
+                                                    </li>
+                                                    <li>
+                                                        Trong trường hợp sản phẩm – size muốn đổi không còn hàng tại cửa
+                                                        hàng đã mua, bạn vui lòng chọn sản phẩm khác.
+                                                    </li>
+                                                </ul>
+                                                <p>
+                                                    <strong>
+                                                        <i>Đối với các sản phẩm mua tại paul cùng các trang
+                                                            thương mại điện tử đối tác khác:</i>
+                                                    </strong>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        Thời hạn đổi hàng với sản phẩm và thời trang là 14 ngày,
+                                                        tính từ ngày bạn nhận được hàng.
+                                                    </li>
+                                                    <li>
+                                                        Đối với các đơn hàng mua online và các trang
+                                                        thương mại điện tử đối tác. Để đổi hàng, bạn vui lòng điền đầy
+                                                        đủ thông tin và làm theo hướng dẫn được in trên thân Shipping
+                                                        Box đi kèm khi giao hàng.
+                                                    </li>
+                                                    <li>
+                                                        Khi đổi hàng, bạn vui lòng chịu 1 đầu phí chuyển đến kho online
+                                                        Ananas. Chúng tôi sẽ chịu đầu phí khi chuyển hàng lại cho bạn
+                                                        sau khi đã hoàn tất việc đổi sản phẩm.
+                                                    </li>
+                                                    <li>
+                                                        Trong trường hợp sản phẩm – size muốn đổi không còn hàng tại hệ
+                                                        thống kho đổi online, bạn vui lòng chọn sản phẩm khác.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="accordion_item--section">
+                                            <h5>
+                                                2. QUY ĐỊNH VỀ VIỆC BẢO HÀNH SẢN PHẨM CỦA PAUL NHƯ THẾ NÀO?
+                                            </h5>
+                                            <div>
+                                                <p>
+                                                    Chúng tôi hiểu rằng đôi khi sản phẩm có thể xảy ra những vấn đề
+                                                    không mong muốn trong quá trình bạn sử dụng. Vì thế, Paul sẽ hỗ
+                                                    trợ bảo hành sản phẩm theo quy định bên dưới:
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        Đối với các sản phẩm, Paul hỗ trợ bảo hành trong vòng 06
+                                                        tháng kể từ ngày mua với các trường hợp bung keo, sứt chỉ, gãy
+                                                        đế hoặc có lỗi từ nhà sản xuất.
+                                                    </li>
+                                                    <li>
+                                                        Đối với các sản phẩm thuộc nhóm thời trang và phụ kiện, chính
+                                                        sách bảo hành không được áp dụng. Mong bạn thông cảm.
+                                                    </li>
+                                                    <li>
+                                                        Để việc bảo hành thuận tiện và nhanh chóng hơn, bạn vui lòng vệ
+                                                        sinh sạch sẽ trước khi gửi về Paul. Chúng tôi xin từ chối
+                                                        thực hiện việc bảo hành nếu như sản phẩm chưa được vệ sinh khi
+                                                        nhận được.
+                                                    </li>
+                                                </ul>
+                                                <p>
+                                                    Đối với các sản phẩm mua tại cửa hàng, bạn có thể đem sản phẩm cần
+                                                    được bảo hành đến bất kì cửa hàng Paul chính thức để được hỗ trợ.
+                                                </p>
+                                                <p>
+                                                    Đối với các sản phẩm mua qua website Paul và các trang thương mại
+                                                    điện tử đối tác, bạn vui lòng làm theo các bước sau:
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        Ghi rõ tên, số điện thoại của bạn cùng tình trạng cần được bảo
+                                                        hành và để vào hộp.
+                                                    </li>
+                                                    <li>
+                                                        Gửi về trung tâm chăm sóc khách hàng tại địa chỉ: 12 Nguyễn Văn Bảo, Gò Vấp, TP. Hồ Chí Minh.
+                                                    </li>
+                                                    <li>
+                                                        Khi gửi bảo hành sản phẩm, bạn vui lòng chịu một đầu phí chuyển
+                                                        đến kho, chúng tôi sẽ chịu phí chuyển đến bạn khi việc
+                                                        bảo hành đã hoàn tất.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="accordion_item--section">
+                                            <h5>
+                                                3. MẤT BAO LÂU ĐỂ TÔI CÓ THỂ NHẬN LẠI SẢN PHẨM ĐƯỢC ĐỔI VÀ BẢO HÀNH KHI
+                                                TÔI GỬI VỀ PAUL?
+                                            </h5>
+                                            <div>
+                                                <p>
+                                                    Khi nhận được sản phẩm bạn gửi về, tùy vào hình thức là “Đổi” hay
+                                                    “Bảo Hành”, bộ phận Customer Service sẽ thông báo lại khoảng thời
+                                                    gian dự kiến mà bạn có thể nhận lại sản phẩm của mình. Hãy tin rằng
+                                                    chúng tôi luôn cố gắng làm việc để sản phẩm trở về tay bạn sớm nhất
+                                                    có thể.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section id="footer">
+            <!-- PC -->
+            <div class="footer-pc container-fluid text-white bg-4c4c4c">
+                <div class="row">
+                    <div class="col-3 px-5">
+                        <div class="row my-5">
+                            <div class="col-12">
+                                <img src="../img/entire/logo-white.png" alt="logo" width="80%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="row my-5">
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    sản phẩm
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/product/tshirt.html">
+                                        <li class="footer-item text-CCCCCC">T-Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/shirt.html">
+                                        <li class="footer-item text-CCCCCC">Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/outerswear.html">
+                                        <li class="footer-item text-CCCCCC">Outerswear</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/pants.html">
+                                        <li class="footer-item text-CCCCCC">Pants</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/shorts.html">
+                                        <li class="footer-item text-CCCCCC">Shorts</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    công ty
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/transfer.html">
+                                        <li class="footer-item text-CCCCCC">Liên hệ chuyển nhượng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    hỗ trợ
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/faqs.html">
+                                        <li class="footer-item text-CCCCCC">FAQs</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/security.html">
+                                        <li class="footer-item text-CCCCCC">bảo mật thông tin</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/policy.html">
+                                        <li class="footer-item text-CCCCCC">Chính sách chung</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/order.html">
+                                        <li class="footer-item text-CCCCCC">Tra cứu đơn hàng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    liên hệ
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="mailto:nvminh162@gmail.com">
+                                        <li class="footer-item text-CCCCCC">Email góp ý</li>
+                                    </a>
+                                    <li class="footer-item text-CCCCCC">Hotline</li>
+                                    <a class="text-decoration-none text-white" href="tel:0353999798">
+                                        <li class="footer-item text-CCCCCC">0353 999 798</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="tel:0388800723">
+                                        <li class="footer-item text-CCCCCC">0388 800 723</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    mạng xã hội
+                                </h4>
+                                <ul class="footer-list list-unstyled d-flex flex-column flex-xl-row">
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.facebook.com/nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-facebook fs-1 p-2"></i></li>
+                                    </a>
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.instagram.com/nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-instagram fs-1 p-2"></i></li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="https://www.tiktok.com/@nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i class="fa-brands fa-tiktok fs-1 p-2"></i>
+                                        </li>
+                                    </a>
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.threads.net/@nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-threads fs-1 p-2"></i></li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    đăng ký nhận mail
+                                </h4>
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-10 px-0">
+                                            <input class="w-100 p-2 rounded-2" type="email" placeholder="Email"
+                                                name="footer_email--PC" id="footer_email--PC" required>
+                                        </div>
+                                        <div class="col-2 px-0">
+                                            <button style="margin-left: -10px;" class="py-2 w-100 text-bg-dark"
+                                                type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-6">
+                                <img class="m-5" src="../img/entire/license.png" alt="" width="50%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <= Tablet, Mobile -->
+            <div class="footer-tablet container-fluid p-0 text-white bg-4c4c4c">
+                <div class="accordion" id="accordionFooter">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <h4 class="footer-heading text-uppercase">
+                                    sản phẩm
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/product/tshirt.html">
+                                        <li class="footer-item text-CCCCCC">T-Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/shirt.html">
+                                        <li class="footer-item text-CCCCCC">Shirt</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/outerswear.html">
+                                        <li class="footer-item text-CCCCCC">Outerswear</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/pants.html">
+                                        <li class="footer-item text-CCCCCC">Pants</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/product/shorts.html">
+                                        <li class="footer-item text-CCCCCC">Shorts</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                <h4 class="footer-heading text-uppercase">
+                                    về công ty
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/transfer.html">
+                                        <li class="footer-item text-CCCCCC">Liên hệ chuyển nhượng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                <h4 class="footer-heading text-uppercase">
+                                    hỗ trợ
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="../html/faqs.html">
+                                        <li class="footer-item text-CCCCCC">FAQs</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/security.html">
+                                        <li class="footer-item text-CCCCCC">Bảo mật thông tin</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/policy.html">
+                                        <li class="footer-item text-CCCCCC">Chính sách chung</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="../html/order.html">
+                                        <li class="footer-item text-CCCCCC">Tra cứu đơn hàng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                <h4 class="footer-heading text-uppercase">
+                                    liên hệ
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="mailto:nvminh162@gmail.com">
+                                        <li class="footer-item text-CCCCCC">Email góp ý</li>
+                                    </a>
+                                    <li class="footer-item text-CCCCCC">Hotline</li>
+                                    <a class="text-decoration-none text-white" href="tel:0353999798">
+                                        <li class="footer-item text-CCCCCC">0353 999 798</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="tel:0388800723">
+                                        <li class="footer-item text-CCCCCC">0388 800 723</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0">
+                        <h4 class="footer-heading mb-4 text-uppercase">
+                            mạng xã hội
+                        </h4>
+                        <ul class="footer-list list-unstyled d-flex">
+                            <a class="text-decoration-none text-white" href="https://www.facebook.com/nvminh162">
+                                <li class="footer-item text-CCCCCC"><i
+                                        class="fa-brands fa-square-facebook fs-1 p-2"></i></li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.instagram.com/nvminh162">
+                                <li class="footer-item text-CCCCCC"><i
+                                        class="fa-brands fa-square-instagram fs-1 p-2"></i></li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.tiktok.com/@nvminh162">
+                                <li class="footer-item text-CCCCCC"><i class="fa-brands fa-tiktok fs-1 p-2"></i>
+                                </li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.threads.net/@nvminh162">
+                                <li class="footer-item text-CCCCCC"><i class="fa-brands fa-square-threads fs-1 p-2"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0">
+                        <h4 class="footer-heading mb-4 text-uppercase">
+                            đăng ký nhận mail
+                        </h4>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-10 px-0">
+                                    <input class="w-100 p-2 rounded-2" type="email" placeholder="Email"
+                                        name="footer_email--Mobile" id="footer_email--Mobile" required>
+                                </div>
+                                <div class="col-2 px-0">
+                                    <button class="p-2 w-100 text-bg-dark" type="submit"><i
+                                            class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0 text-center">
+                        <a class="px-3 py-2 bg-black rounded-3" href="#"><i class="fa-solid fa-arrow-up"
+                                style="color: #ffffff;"></i></a>
+                        Back to top
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0 text-center py-4">
+                        <img src="../img/entire/license.png" alt="" width="20%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Copyright -->
+        <section id="copyright">
+            <div class="footer-copyright text-center py-1 bg-f2f2f2 text-dark fw-medium">
+                Copyright © 2024 <a class="text-decoration-none text-dark" href="#">PAUL'S MENSWEAR.</a>
+                Powered by <a class="text-decoration-none text-dark" href="#">Paul Nguyen</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- script -->
+    <script src="../js/home.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+
+</html>

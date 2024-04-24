@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT | PAUL'S MENSWEAR ® | Official Website VN</title>
+
+    <link rel="stylesheet" href="../../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../fonts/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../../css/myStyle.css">
+    <script src="../../bootstrap-5.3.3-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="../../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .btn-black {
+            background-color: black;
+            color: white;
+        }
+
+        @media only screen and (min-width: 992px) {
+            .container {
+                padding: 0 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <!-- Navigation -->
+        <section id="header">
+            <nav class="navbar navbar-expand-lg py-2 bg-body-tertiary fixed-top">
+                <div class="container">
+                    <!--nav toggle -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars fs-5"></i>
+                    </button>
+                    <!--nav logo -->
+                    <a class="navbar-brand me-0 fs-4" href="../../html/home.html">
+                        <img class="nav-logo" src="../../img/entire/logo-black.jpg" alt="" width="120px">
+                    </a>
+                    <div class="sideBar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium" aria-current="page"
+                                        href="../../html/home.html">home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-uppercase fs-5 fw-bold active dropdown-toggle" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        product
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../../html/product/tshirt.html">t-shirts</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../../html/product/shirt.html">shirts</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../../html/product/outerwear.html">outerwears</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../../html/product/pants.html">pants</a></li>
+                                        <li><a class="dropdown-item text-uppercase"
+                                                href="../../html/product/shorts.html">shorts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium"
+                                        href="../../html/news.html">news</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium"
+                                        href="../../html/store.html">contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase fs-5 fw-medium"
+                                        href="../../../index.html">about</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--nav item  -->
+                    <ul class="nav-list d-flex list-unstyled my-auto">
+                        <li class="nav-item mx-2">
+                            <a class="text-dark fs-5" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                                aria-controls="offcanvasTop">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <div class="dropdown">
+                                <a class="fs-5 text-dark" data-bs-toggle="dropdown" href="#"><i
+                                        class="fa-solid fa-user"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="btn-login">
+                                        <a class="dropdown-item" href="../../html/login.html">Đăng nhập</a>
+                                    </li>
+                                    <li class="btn-register">
+                                        <a class="dropdown-item" href="../../html/register.html">Đăng ký</a>
+                                    </li>
+                                    <li class="btn-logout">
+                                        <a class="dropdown-item" href="../../html/login.html">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2 position-relative">
+                            <a class="text-dark fs-5" href="../../html/cart.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="quantity position-absolute top-0 start-100 badge rounded-pill bg-danger">
+                                    0
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- search form -->
+            <div class="search-offcanvas offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form action="">
+                        <div class="input-group mb-3 w-75 d-flex mx-auto">
+                            <input required type="text" class="form-control border-black p-3" placeholder="Search">
+                            <button class="btn border-black px-4" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+                    </form>
+                    <p class="text-center text-danger">Không tìm thấy kết quả khả dụng</p>
+                </div>
+            </div>
+        </section>
+        <!-- Details product -->
+        <section id="detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-12">
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="1000">
+                                    <img class="detail-product-img" src="../../img/products/outerswear/3/1.avif"
+                                        class="d-block w-100" alt="slider1" width="100%">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="../../img/products/outerswear/3/2.avif" class="d-block w-100" alt="slider2"
+                                        width="100%">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="../../img/products/outerswear/3/3.avif" class="d-block w-100" alt="slider3"
+                                        width="100%">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="../../img/products/outerswear/3/4.avif" class="d-block w-100" alt="slider4"
+                                        width="100%">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="../../img/products/outerswear/3/5.avif" class="d-block w-100" alt="slider5"
+                                        width="100%">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12 my-3">
+                        <div class="row my-1">
+                            <div class="col-12">
+                                <h4 class="detail-product-title">GG COTTON CANVAS ZIP JACKET</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-12 text-start product-rating" style="color: #FFD43B;">
+                                <i class="fa-solid fa-star fa-2xs"></i>
+                                <i class="fa-solid fa-star fa-2xs"></i>
+                                <i class="fa-solid fa-star fa-2xs"></i>
+                                <i class="fa-solid fa-star fa-2xs"></i>
+                                <i class="fa-regular fa-star fa-2xs"></i>
+                                <span class="text-dark">(4/5)</span>
+                            </div>
+                        </div>
+                        <div class="row my-1">
+                            <div class="col-12">
+                                <h5 class="detail-product-price text-danger">22,500,000đ</h5>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-12 fw-medium">
+                                Thông tin sản phẩm
+                            </div>
+                            <div class="col-12">
+                                Model wears size XL
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-12">
+                                <button type="button" class="bg-transparent border border-0 px-0" data-bs-toggle="modal"
+                                    data-bs-target="#myModal" data-bs-toggle="tooltip" title="Hướng dẫn chọn size">
+                                    Hướng dẫn chọn size
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal modal-xl" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title"></h4>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="../../img/size/guide.png" alt="" width="100%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                Size
+                            </div>
+                            <div class="col-12 my-2">
+                                <button disabled data-bs-toggle="tooltip" title="Hết hàng"
+                                    class="btn-size mb-2 me-3 px-3">S</button>
+                                <button disabled data-bs-toggle="tooltip" title="Hết hàng"
+                                    class="btn-size mb-2 me-3 px-3">M</button>
+                                <button disabled data-bs-toggle="tooltip" title="Hết hàng"
+                                    class="btn-size mb-2 me-3 px-3">L</button>
+                                <button data-bs-toggle="tooltip" title="Bấm để chọn" class="btn-size mb-2 me-3 px-3"
+                                    onclick="changeColor(this);">XL</button>
+                                <button disabled data-bs-toggle="tooltip" title="Hết hàng"
+                                    class="btn-size mb-2 me-3 px-3">XXL</button>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-12 fw-medium">
+                                <span class="me-4">Số lượng</span>
+                                <i class="fa-solid fa-minus" data-bs-toggle="tooltip" title="Giảm số lượng"
+                                    onclick="decreaseQuantity()"></i>
+                                <label id="quantity-label" class="detail-product-quantity border px-4">1</label>
+                                <i class="fa-solid fa-plus" data-bs-toggle="tooltip" title="Tăng số lượng"
+                                    onclick="increaseQuantity()"></i>
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-12 d-flex">
+                                <a class="btn-cart text-uppercase text-decoration-none text-bg-dark p-3 rounded-4 flex-grow-1 text-center"
+                                    href="../cart.html">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section id="footer">
+            <!-- PC -->
+            <div class="footer-pc container-fluid text-white bg-4c4c4c">
+                <div class="row">
+                    <div class="col-3 px-5">
+                        <div class="row my-5">
+                            <div class="col-12">
+                                <img src="../../img/entire/logo-white.png" alt="logo" width="80%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="row my-5">
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    sản phẩm
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Áo Nam</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Quần Nam</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Thời trang & Phụ kiện</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Giảm giá</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    công ty
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Tuyển dụng</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Liên hệ chuyển nhượng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    hỗ trợ
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">FAQs</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">bảo mật thông tin</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Chính sách chung</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Tra cứu đơn hàng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    liên hệ
+                                </h4>
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Email góp ý</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Hotline</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">0353 999 798</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    mạng xã hội
+                                </h4>
+                                <ul class="footer-list list-unstyled d-flex flex-column flex-xl-row">
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.facebook.com/nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-facebook fs-1 p-2"></i></li>
+                                    </a>
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.instagram.com/nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-instagram fs-1 p-2"></i></li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="https://www.tiktok.com/@nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i class="fa-brands fa-tiktok fs-1 p-2"></i>
+                                        </li>
+                                    </a>
+                                    <a class="text-decoration-none text-white"
+                                        href="https://www.threads.net/@nvminh162">
+                                        <li class="footer-item text-CCCCCC"><i
+                                                class="fa-brands fa-square-threads fs-1 p-2"></i></li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="footer-heading mb-4 text-uppercase">
+                                    đăng ký nhận mail
+                                </h4>
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-10 px-0">
+                                            <input class="w-100 p-2 rounded-2" type="email" placeholder="Email"
+                                                name="footer_email--PC" id="footer_email--PC" required>
+                                        </div>
+                                        <div class="col-2 px-0">
+                                            <button style="margin-left: -10px;" class="py-2 w-100 text-bg-dark"
+                                                type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-6">
+                                <img class="m-5" src="../../img/entire/license.png" alt="" width="50%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <= Tablet, Mobile -->
+            <div class="footer-tablet container-fluid p-0 text-white bg-4c4c4c">
+                <div class="accordion" id="accordionFooter">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <h4 class="footer-heading text-uppercase">
+                                    sản phẩm
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Áo Nam</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Quần Nam</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Thời trang & Phụ kiện</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Giảm giá</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                <h4 class="footer-heading text-uppercase">
+                                    về công ty
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Tuyển dụng</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Liên hệ chuyển nhượng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                <h4 class="footer-heading text-uppercase">
+                                    hỗ trợ
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">FAQs</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Bảo mật thông tin</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Chính sách chung</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Tra cứu đơn hàng</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                <h4 class="footer-heading text-uppercase">
+                                    liên hệ
+                                </h4>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul class="footer-list list-unstyled">
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Email góp ý</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">Hotline</li>
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <li class="footer-item text-CCCCCC">0353 999 798</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0">
+                        <h4 class="footer-heading mb-4 text-uppercase">
+                            mạng xã hội
+                        </h4>
+                        <ul class="footer-list list-unstyled d-flex">
+                            <a class="text-decoration-none text-white" href="https://www.facebook.com/nvminh162">
+                                <li class="footer-item text-CCCCCC"><i
+                                        class="fa-brands fa-square-facebook fs-1 p-2"></i></li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.instagram.com/nvminh162">
+                                <li class="footer-item text-CCCCCC"><i
+                                        class="fa-brands fa-square-instagram fs-1 p-2"></i></li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.tiktok.com/@nvminh162">
+                                <li class="footer-item text-CCCCCC"><i class="fa-brands fa-tiktok fs-1 p-2"></i>
+                                </li>
+                            </a>
+                            <a class="text-decoration-none text-white" href="https://www.threads.net/@nvminh162">
+                                <li class="footer-item text-CCCCCC"><i class="fa-brands fa-square-threads fs-1 p-2"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0">
+                        <h4 class="footer-heading mb-4 text-uppercase">
+                            đăng ký nhận mail
+                        </h4>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-10 px-0">
+                                    <input class="w-100 p-2 rounded-2" type="email" placeholder="Email"
+                                        name="footer_email--Mobile" id="footer_email--Mobile" required>
+                                </div>
+                                <div class="col-2 px-0">
+                                    <button class="p-2 w-100 text-bg-dark" type="submit"><i
+                                            class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0 text-center">
+                        <a class="px-3 py-2 bg-black rounded-3" href="#"><i class="fa-solid fa-arrow-up"
+                                style="color: #ffffff;"></i></a>
+                        Back to top
+                    </div>
+                    <div style="background-color: #4c4c4c;" class="accordion-body border-0 text-center py-4">
+                        <img src="../../img/entire/license.png" alt="" width="20%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Copyright -->
+        <section id="copyright">
+            <div class="footer-copyright text-center py-1 bg-f2f2f2 text-dark fw-medium">
+                Copyright © 2024 <a class="text-decoration-none text-dark" href="#">PAUL'S MENSWEAR.</a>
+                Powered by <a class="text-decoration-none text-dark" href="#">Paul Nguyen</a>
+            </div>
+        </section>
+    </div>
+    <!-- script -->
+    <script src="../../js/detailProduct.js"></script>
+</body>
+
+</html>
